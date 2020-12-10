@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Region;
 use App\Models\Veteran;
 use App\Services\Veterans\VeteranService;
 use Illuminate\Http\Request;
@@ -26,7 +27,10 @@ class VeteransController extends Controller
 
     public function create()
     {
-        return view('admin.veterans.create');
+        $regionList = Region::pluck('title', 'id')->map(function ($region){
+            return __('regions.' . $region);
+        })->toArray();
+        return view('admin.veterans.create', compact(['regionList']));
     }
 
     public function show(Veteran $veteran)
@@ -45,6 +49,22 @@ class VeteransController extends Controller
     {
         $this->veteranService->createVeteran($request->all());
         flash('Veteran was created')->success();
+        return redirect()->route('admin.veterans.index');
+    }
+
+    public function edit(Veteran $veteran)
+    {
+        $regionList = Region::pluck('title', 'id')->map(function ($region){
+            return __('regions.' . $region);
+        })->toArray();
+        $selectedRegion = $veteran->region->id;
+        return view('admin.veterans.edit', compact(['veteran', 'regionList', 'selectedRegion']));
+    }
+
+    public function update(Veteran $veteran, Request $request)
+    {
+        $this->veteranService->updateVeteran($veteran, $request->all());
+        flash('Veteran was updated')->success();
         return redirect()->route('admin.veterans.index');
     }
 }

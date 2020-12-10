@@ -6,7 +6,9 @@ namespace App\Services\Veterans;
 
 use App\Models\Veteran;
 use App\Services\Veterans\Handlers\CreateVeteranHandler;
+use App\Services\Veterans\Handlers\UpdateVeteranHandler;
 use App\Services\Veterans\Repositories\VeteranRepository;
+use Illuminate\Http\Request;
 
 class VeteranService
 {
@@ -18,11 +20,16 @@ class VeteranService
      * @var CreateVeteranHandler
      */
     private $createVeteranHandler;
+    /**
+     * @var UpdateVeteranHandler
+     */
+    private $updateVeteranHandler;
 
-    public function __construct(VeteranRepository $veteranRepository, CreateVeteranHandler $createVeteranHandler)
+    public function __construct(VeteranRepository $veteranRepository, CreateVeteranHandler $createVeteranHandler, UpdateVeteranHandler $updateVeteranHandler)
     {
         $this->veteranRepository = $veteranRepository;
         $this->createVeteranHandler = $createVeteranHandler;
+        $this->updateVeteranHandler = $updateVeteranHandler;
     }
 
     public function all()
@@ -52,5 +59,10 @@ class VeteranService
     public function createVeteran($data)
     {
         return $this->createVeteranHandler->handle($data);
+    }
+
+    public function updateVeteran(Veteran $veteran, array $data)
+    {
+        return $this->updateVeteranHandler->handle($veteran, $data);
     }
 }

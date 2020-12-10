@@ -69,10 +69,10 @@
             <div class="card">
                 <div class="card-body">
                     <p class="font-weight-bold">Thumbnail</p>
-                    <img src="{{$veteran->thumbnail}}" alt="">
+                    <img src="{{$veteran->getImagePath('thumbnail')}}" alt="" width="100"> <br><br>
                     <hr>
                     <p class="font-weight-bold">Region</p>
-                    {{$veteran->region}}
+                    {{__('regions.' . $veteran->region->title)}}
                     <hr>
                     <div class="d-flex mt-4">
                         <a href="{{route('admin.veterans.edit', $veteran)}}" class="btn btn-info"><i

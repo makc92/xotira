@@ -32,8 +32,10 @@ Route::group(
     ],
     function () {
         Route::get('/', 'DashboardController@index')->name('dashboard');
+        Route::post('ckeditor/image_upload', 'CheckEditorController@upload')->name('upload');
         Route::resource('users', 'UsersController');
         Route::resource('veterans', 'VeteransController');
+        Route::resource('news', 'NewsController');
     }
 );
 

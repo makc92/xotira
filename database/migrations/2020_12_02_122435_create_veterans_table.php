@@ -17,7 +17,11 @@ class CreateVeteransTable extends Migration
             $table->id();
 
             $table->string('thumbnail');
-            $table->string('region');
+            /*$table->string('region');*/
+            $table->unsignedBigInteger('region_id');
+            $table->foreign('region_id')
+                    ->references('id')
+                    ->on('regions');
             $table->timestamps();
         });
         Schema::create('veteran_translations', function (Blueprint $table) {
@@ -27,7 +31,7 @@ class CreateVeteransTable extends Migration
             $table->unique(['veteran_id','locale']);
             $table->foreign('veteran_id')->references('id')->on('veterans')->onDelete('cascade');
 
-            $table->string('name');
+            $table->string('name')->index();
             $table->string('slug');
             $table->string('description');
 

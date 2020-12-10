@@ -31,6 +31,8 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\News[] $news
+ * @property-read int|null $news_count
  */
 class User extends Authenticatable
 {
@@ -62,4 +64,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function news() {
+        return $this->hasMany(News::class);
+    }
 }

@@ -241,6 +241,11 @@ return [
             'url'  => 'admin/veterans',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'News',
+            'url'  => 'admin/news',
+            'icon' => 'fas fa-fw fa-user',
+        ],
     ],
 
     /*
@@ -345,6 +350,17 @@ return [
                     'type' => 'js',
                     'asset' => false,
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+                ],
+            ],
+        ],
+        [
+            'name' => 'fileInput',
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '//cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js',
                 ],
             ],
         ],

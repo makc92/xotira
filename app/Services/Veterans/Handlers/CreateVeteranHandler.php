@@ -36,7 +36,7 @@ class CreateVeteranHandler
                 'name' => $data['en_name'],
                 'description' => $data['en_description'],
             ],
-            'region' => $data['region']
+            'region_id' => $data['region_id']
         ];
 
         return $this->veteranRepository->createFromArray($data);

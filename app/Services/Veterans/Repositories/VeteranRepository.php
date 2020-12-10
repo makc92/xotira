@@ -60,10 +60,11 @@ class VeteranRepository
     public function createFromArray($data)
     {
         return Veteran::create($data);
-        /*$veteran = new Veteran();
-        $veteran->fill($data);
-        $veteran->save();
-        return $veteran;*/
     }
 
+    public function updateFromArray(Veteran $veteran, array $data)
+    {
+        $veteran = $veteran->update($data);
+        return $veteran;
+    }
 }

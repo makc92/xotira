@@ -10011,6 +10011,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestValidation()
          * @param array $rules
          * @param mixed $params
          * @static 
@@ -10022,6 +10023,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestValidation()
          * @param string $errorBag
          * @param array $rules
          * @param mixed $params
@@ -10034,6 +10036,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestSignatureValidation()
          * @param mixed $absolute
          * @static 
          */ 
@@ -11143,6 +11146,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::auth()
          * @param mixed $options
          * @static 
          */ 
@@ -11153,6 +11157,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::resetPassword()
          * @static 
          */ 
         public static function resetPassword()
@@ -11162,6 +11167,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::confirmPassword()
          * @static 
          */ 
         public static function confirmPassword()
@@ -11171,6 +11177,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::emailVerification()
          * @static 
          */ 
         public static function emailVerification()
@@ -14123,6 +14130,32 @@
      *
      */ 
         class Str {
+                    /**
+         * 
+         *
+         * @see \Tanmuhittin\LaravelGoogleTranslate\LaravelGoogleTranslateServiceProvider::register()
+         * @param string $text
+         * @param string $locale
+         * @param string|null $base_locale
+         * @static 
+         */ 
+        public static function apiTranslate($text, $locale, $base_locale = null)
+        {
+                        return \Illuminate\Support\Str::apiTranslate($text, $locale, $base_locale);
+        }
+                    /**
+         * 
+         *
+         * @see \Tanmuhittin\LaravelGoogleTranslate\LaravelGoogleTranslateServiceProvider::register()
+         * @param string $text
+         * @param string $locale
+         * @param string|null $base_locale
+         * @static 
+         */ 
+        public static function apiTranslateWithAttributes($text, $locale, $base_locale = null)
+        {
+                        return \Illuminate\Support\Str::apiTranslateWithAttributes($text, $locale, $base_locale);
+        }
          
     }
      
@@ -16416,6 +16449,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestValidation()
          * @param array $rules
          * @param mixed $params
          * @static 
@@ -16427,6 +16461,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestValidation()
          * @param string $errorBag
          * @param array $rules
          * @param mixed $params
@@ -16439,6 +16474,7 @@
                     /**
          * 
          *
+         * @see \Illuminate\Foundation\Providers\FoundationServiceProvider::registerRequestSignatureValidation()
          * @param mixed $absolute
          * @static 
          */ 
@@ -16461,6 +16497,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::auth()
          * @param mixed $options
          * @static 
          */ 
@@ -16471,6 +16508,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::resetPassword()
          * @static 
          */ 
         public static function resetPassword()
@@ -16480,6 +16518,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::confirmPassword()
          * @static 
          */ 
         public static function confirmPassword()
@@ -16489,6 +16528,7 @@
                     /**
          * 
          *
+         * @see \Laravel\Ui\AuthRouteMethods::emailVerification()
          * @static 
          */ 
         public static function emailVerification()
@@ -16510,6 +16550,7 @@
                     /**
          * 
          *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
          * @param mixed $component
          * @static 
          */ 
@@ -16520,6 +16561,7 @@
                     /**
          * 
          *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
          * @param mixed $component
          * @static 
          */ 
@@ -16541,6 +16583,7 @@
                     /**
          * 
          *
+         * @see \Livewire\LivewireServiceProvider::registerViewMacros()
          * @param mixed $name
          * @static 
          */ 
@@ -16558,6 +16601,7 @@
                     /**
          * 
          *
+         * @see \Livewire\Macros\ViewMacros::extends()
          * @param mixed $view
          * @param mixed $params
          * @static 
@@ -16569,6 +16613,7 @@
                     /**
          * 
          *
+         * @see \Livewire\Macros\ViewMacros::layout()
          * @param mixed $view
          * @param mixed $params
          * @static 
@@ -16580,6 +16625,7 @@
                     /**
          * 
          *
+         * @see \Livewire\Macros\ViewMacros::section()
          * @param mixed $section
          * @static 
          */ 
@@ -16590,6 +16636,7 @@
                     /**
          * 
          *
+         * @see \Livewire\Macros\ViewMacros::slot()
          * @param mixed $slot
          * @static 
          */ 

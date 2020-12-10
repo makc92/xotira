@@ -36,17 +36,59 @@ use KingOfCode\Upload\Uploadable;
  * @method static \Illuminate\Database\Eloquent\Builder|Veteran whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Veteran withTranslation()
  * @mixin \Eloquent
+ * @property int $region_id
+ * @method static \Illuminate\Database\Eloquent\Builder|Veteran whereRegionId($value)
  */
 class Veteran extends Model
 {
     use Uploadable, Translatable;
 
-    protected $fillable = ['region'];
+    protected $fillable = ['region_id'];
 
     public $translatedAttributes = ['name', 'slug', 'description'];
 
     protected $uploadableImages = [
         'thumbnail'
     ];
+
+      const CITY_TASHKENT  = 'tashkent';
+      const CITY_ANDIJAN  ='andijan';
+      const CITY_BUKHARA  = 'bukhara';
+      const CITY_FERGANA  = 'fergana';
+      const CITY_JIZZAKH  = 'jizzakh';
+      const CITY_NAMANGAN  = 'namangan';
+      const CITY_NAVOIY  = 'navoiy';
+      const CITY_QASHQADARYO  = 'qashqadaryo';
+      const CITY_SAMARKAND  = 'samarkand';
+      const CITY_SIRDARYO  = 'sirdaryo';
+      const CITY_SURHANDARYO  = 'surhandaryo';
+      const CITY_TASHKENT_REGION  = 'tashkent_region';
+      const CITY_XORAZM  = 'xorazm';
+      const CITY_QARAQALPAKSTAN  = 'qaraqalpakstan';
+
+    public static function regionList(): array {
+        return [
+            self::CITY_TASHKENT  => 'tashkent',
+            self::CITY_ANDIJAN  => 'andijan',
+            self::CITY_BUKHARA  => 'bukhara',
+            self::CITY_FERGANA  => 'fergana',
+            self::CITY_JIZZAKH  => 'jizzakh',
+            self::CITY_NAMANGAN  => 'namangan',
+            self::CITY_NAVOIY  => 'navoiy',
+            self::CITY_QASHQADARYO  => 'qashqadaryo',
+            self::CITY_SAMARKAND  => 'samarkand',
+            self::CITY_SIRDARYO  => 'sirdaryo',
+            self::CITY_SURHANDARYO  => 'surhandaryo',
+            self::CITY_TASHKENT_REGION  => 'tashkent_region',
+            self::CITY_XORAZM  => 'xorazm',
+            self::CITY_QARAQALPAKSTAN  => 'qaraqalpakstan',
+        ];
+    }
+
+    public function region()
+    {
+        return $this->belongsTo(Region::class);
+    }
+
 
 }

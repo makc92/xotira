@@ -95,12 +95,20 @@
                     </div>
                     <div class="form-group">
                         {{Form::label('region', 'Регион (*)')}}
-                        {{Form::select('region', ['Tashkent' => 'Tashkent', 'Samarkand' => 'Samarkand'], null ,['class' => 'form-control'])}}
+                        {{Form::select('region_id', $regionList, null ,['class' => 'form-control'])}}
                     </div>
                     <button type="submit" class="btn btn-success"><i class="fas fa-plus-square"></i> Create Veteran</button>
+                    <a href="{{route('admin.veterans.index')}}" class="btn btn-primary"><i
+                            class="fas fa-angle-double-left"></i> Back</a>
                 </div>
             </div>
         </div>
     </div>
     {!! Form::close() !!}
 @stop
+
+@section('js')
+    <script>
+        bsCustomFileInput.init();
+    </script>
+@endsection
