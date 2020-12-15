@@ -16,7 +16,7 @@ class CreateVeteransTable extends Migration
         Schema::create('veterans', function (Blueprint $table) {
             $table->id();
 
-            $table->string('thumbnail');
+            $table->string('thumbnail')->nullable();
             /*$table->string('region');*/
             $table->unsignedBigInteger('region_id');
             $table->foreign('region_id')

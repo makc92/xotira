@@ -38,7 +38,6 @@ class CreateVeteranHandler
             ],
             'region_id' => $data['region_id']
         ];
-
         return $this->veteranRepository->createFromArray($data);
     }
 }

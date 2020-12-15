@@ -232,19 +232,34 @@ return [
 
     'menu' => [
         [
-            'text' => 'Users',
+            'text' => 'Пользователи',
             'url'  => 'admin/users',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'Veterans',
+            'text' => 'Ветераны',
             'url'  => 'admin/veterans',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-user-friends',
         ],
         [
-            'text' => 'News',
+            'text' => 'Новости',
             'url'  => 'admin/news',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-newspaper',
+        ],
+        [
+            'text' => 'Библиотека',
+            'url'  => 'admin/books',
+            'icon' => 'fas fa-book-open',
+        ],
+        [
+            'text' => 'Подвиги',
+            'url'  => 'admin/achievements',
+            'icon' => 'fas fa-star',
+        ],
+        [
+            'text' => 'Заявки',
+            'url'  => 'admin/applications',
+            'icon' => 'fas fa-file',
         ],
     ],
 

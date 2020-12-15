@@ -92,13 +92,14 @@
                 <div class="card-body">
                     <div class="form-group mb-4">
                         {{Form::label('thumbnail', 'Картинка', ['class' => 'col-form-label'])}} <br>
-                        <img src="{{$news->getImagePath('thumbnail')}}" alt="" width="200">
+                        <i>Размер картинки не должен превышать <b>2МБ</b></i> <br>
+                        <img src="{{$news->getImagePath('thumbnail')}}" alt="" width="200"> <br><br>
                         <div class="custom-file d-block">
                             {{Form::file('thumbnail', $attributes = ['class' => 'custom-file-input'])}}
                             {{Form::label('thumbnail', '', ['class' => 'custom-file-label'])}}
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-info"><i class="fas fa-plus-square"></i> Update News</button>
+                    <button type="submit" class="btn btn-info"><i class="fas fa-edit"></i> Update News</button>
                     <a href="{{route('admin.news.index')}}" class="btn btn-primary"><i
                             class="fas fa-angle-double-left"></i> Back</a>
                 </div>

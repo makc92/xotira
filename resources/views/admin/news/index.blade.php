@@ -12,7 +12,7 @@
             <a href="{{route('admin.news.create')}}" class="btn bg-gradient-success mb-2"><i class="fas fa-plus-square"></i> Create News</a>
             <div class="card">
                 <div class="card-body">
-                    <livewire:show-news />
+                    <livewire:admin.show-news />
                 </div>
             </div>
         </div>

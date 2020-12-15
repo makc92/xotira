@@ -33,6 +33,8 @@ use Illuminate\Notifications\Notifiable;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\News[] $news
  * @property-read int|null $news_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\News[] $achievement
+ * @property-read int|null $achievement_count
  */
 class User extends Authenticatable
 {
@@ -66,6 +68,11 @@ class User extends Authenticatable
     ];
 
     public function news() {
+        return $this->hasMany(News::class);
+    }
+
+    public function achievement()
+    {
         return $this->hasMany(News::class);
     }
 }

@@ -12,9 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(app()->getLocale());
+});
+Route::group([
+    'prefix' => '{locale}',
+    'where' => ['locale' => '[a-zA-Z]{2}'],
+    'middleware' => 'localization'], function() {
+    Route::get('/', 'Front\MainPageController@index')->name('main');
+    Route::get('/news', 'Front\NewsController@index')->name('news');
 });
 
 Auth::routes([
@@ -36,6 +42,9 @@ Route::group(
         Route::resource('users', 'UsersController');
         Route::resource('veterans', 'VeteransController');
         Route::resource('news', 'NewsController');
+        Route::resource('books', 'BooksController');
+        Route::resource('achievements', 'AchievementsController');
+        Route::resource('applications', 'ApplicationsController');
     }
 );
 

@@ -13,9 +13,9 @@ class NewsRepository
         return News::withTranslation()->orderBy('id', 'desc')->get();
     }
 
-    public function paginate()
+    public function paginate($number)
     {
-        return News::withTranslation()->orderBy('id', 'desc')->paginate(10);
+        return News::withTranslation()->orderBy('id', 'desc')->paginate($number);
     }
 
     public function searchByTitle($text)

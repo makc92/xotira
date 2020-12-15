@@ -6,6 +6,9 @@
 @stop
 
 @section('content')
+    @if ($errors->any())
+        @include('layouts.errors')
+    @endif
     @include('flash::message')
     {!! Form::open(['route' => ['admin.veterans.update',$veteran->id], 'method'=>'put','enctype' => 'multipart/form-data']) !!}
 
@@ -88,7 +91,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group mb-4">
-                        {{Form::label('thumbnail', 'Фото', ['class' => 'col-form-label'])}} <br> <br>
+                        {{Form::label('thumbnail', 'Фото', ['class' => 'col-form-label'])}} <br>
+                        <i>Размер картинки не должен превышать <b>1МБ</b></i> <br> <br>
                         <img src="{{$veteran->getImagePath('thumbnail')}}" alt="" width="100"> <br><br>
                         <div class="custom-file d-block">
                             {{Form::file('thumbnail', $attributes = ['class' => 'custom-file-input'])}}
@@ -99,7 +103,7 @@
                         {{Form::label('region', 'Регион (*)')}}
                         {{Form::select('region_id', $regionList, $selectedRegion ,['class' => 'form-control'])}}
                     </div>
-                    <button type="submit" class="btn btn-info"><i class="fas fa-plus-square"></i> Update Veteran</button>
+                    <button type="submit" class="btn btn-info"><i class="fas fa-edit"></i> Update Veteran</button>
                     <a href="{{route('admin.veterans.index')}}" class="btn btn-primary"><i
                             class="fas fa-angle-double-left"></i> Back</a>
                 </div>

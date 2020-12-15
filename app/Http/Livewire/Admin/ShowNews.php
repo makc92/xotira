@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin;
 
 use App\Services\News\NewsService;
 use Livewire\Component;
@@ -16,7 +16,7 @@ class ShowNews extends Component
     {
         $searchNews = $this->searchNews;
         $newsService = resolve(NewsService::class);
-        return view('livewire.show-news', [
+        return view('livewire.admin.show-news', [
             'news' => $newsService->searchNewsByTitle($searchNews)
         ]);
     }

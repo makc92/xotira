@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin;
 
 use App\Models\Veteran;
 use App\Services\Veterans\VeteranService;
@@ -18,7 +18,7 @@ class ShowVeterans extends Component
     {
         $searchVeteran = $this->searchVeteran;
         $veteranService = resolve(VeteranService::class);
-        return view('livewire.show-veterans',[
+        return view('livewire.admin.show-veterans',[
             'veterans' => $veteranService->searchVeteransByName($searchVeteran)
         ]);
     }

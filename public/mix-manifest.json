@@ -1,4 +1,5 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/libs.css": "/css/libs.css?id=b810d73d64ef065ae043",
+    "/css/main.css": "/css/main.css?id=cfaf4278c1db9189f26e",
+    "/js/main.js": "/js/main.js?id=e6827c35ac649f079723"
 }

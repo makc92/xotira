@@ -36,9 +36,9 @@ class NewsService
         return $this->newsRepository->getAll();
     }
 
-    public function paginateNews()
+    public function paginateNews($number)
     {
-        return $this->newsRepository->paginate();
+        return $this->newsRepository->paginate($number);
     }
 
     public function searchNewsByTitle($text)

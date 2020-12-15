@@ -13,7 +13,7 @@
             <a href="{{route('admin.veterans.create')}}" class="btn bg-gradient-success mb-2"><i class="fas fa-plus-square"></i> Create Veteran</a>
             <div class="card">
                 <div class="card-body">
-                    <livewire:show-veterans />
+                    <livewire:admin.show-veterans />
                 </div>
             </div>
         </div>

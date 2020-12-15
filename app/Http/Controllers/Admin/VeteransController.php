@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Veteran\StoreVeteranRequest;
+use App\Http\Requests\Veteran\UpdateVeteranRequest;
 use App\Models\Region;
 use App\Models\Veteran;
 use App\Services\Veterans\VeteranService;
@@ -45,7 +47,7 @@ class VeteransController extends Controller
         return redirect()->route('admin.veterans.index');
     }
 
-    public function store(Request $request)
+    public function store(StoreVeteranRequest $request)
     {
         $this->veteranService->createVeteran($request->all());
         flash('Veteran was created')->success();
@@ -61,7 +63,7 @@ class VeteransController extends Controller
         return view('admin.veterans.edit', compact(['veteran', 'regionList', 'selectedRegion']));
     }
 
-    public function update(Veteran $veteran, Request $request)
+    public function update(Veteran $veteran, UpdateVeteranRequest $request)
     {
         $this->veteranService->updateVeteran($veteran, $request->all());
         flash('Veteran was updated')->success();

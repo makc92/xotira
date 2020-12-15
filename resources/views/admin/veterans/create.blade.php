@@ -7,6 +7,9 @@
 
 @section('content')
     @include('flash::message')
+    @if ($errors->any())
+        @include('layouts.errors')
+    @endif
     {!! Form::open(['route' => 'admin.veterans.store', 'enctype' => 'multipart/form-data']) !!}
     <div class="row">
         <div class="col-9">
@@ -87,7 +90,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group mb-4">
-                        {{Form::label('thumbnail', 'Фото', ['class' => 'col-form-label'])}}
+                        {{Form::label('thumbnail', 'Фото', ['class' => 'col-form-label'])}} <br>
+                        <i>Размер картинки не должен превышать <b>1МБ</b></i> <br> <br>
                         <div class="custom-file d-block">
                             {{Form::file('thumbnail', $attributes = ['class' => 'custom-file-input'])}}
                             {{Form::label('thumbnail', '', ['class' => 'custom-file-label'])}}

@@ -6,6 +6,7 @@ namespace App\Services\Veterans\Handlers;
 
 use App\Models\Veteran;
 use App\Services\Veterans\Repositories\VeteranRepository;
+use Image;
 
 class UpdateVeteranHandler
 {
