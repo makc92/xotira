@@ -27,19 +27,49 @@
 </head>
 
 <body>
-@include('blocks.header')
-<section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style="background-image: url('{{asset('./images/main2.jpg')}}');">
-    <div class="opacity-medium bg-extra-dark-gray"></div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
-                <!-- start page title -->
-                <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Янгиликлар</h1>
-                <!-- end page title -->
+<!-- start header -->
+<header class="header-with-topbar" style="height: 108px">
+    <!-- topbar -->
+    <div class="top-header-area bg-black padding-10px-tb">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-end">
+                    @yield('page_lang')
+                </div>
             </div>
         </div>
     </div>
-</section>
+    <!-- end topbar -->
+    <!-- start navigation -->
+    <nav class="navbar navbar-default bootsnav navbar-top header-light-transparent background-transparent nav-box-width navbar-expand-lg">
+        <div class="container-fluid nav-header-container">
+            <div class="col-auto col-lg accordion-menu">
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-toggle-1">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
+                    <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
+                        <li><a href="{{route('main', app()->getLocale())}}" title="Home" class="inner-link">Asosiy</a></li>
+                        <li><a href="{{route('news', app()->getLocale())}}" title="Home" class="inner-link">Янгиликлар</a></li>
+                        <li><a href="{{route('memory', app()->getLocale())}}" title="About" class="inner-link">Хотира китоби</a></li>
+                        <li><a href="#museum" title="Team" class="inner-link">Музей</a></li>
+                        <li><a href="#lib" title="Blog" class="inner-link">Электрон кутубхона</a></li>
+                        <li><a href="#photo" title="Work" class="inner-link">Медиатека</a></li>
+                        <li><a href="#form" title="Clients" class="inner-link">Маълумот қолдириш</a></li>
+                        <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+    <!-- end navigation -->
+</header>
+
 @yield('page_content')
 
 <!-- start footer -->

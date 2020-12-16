@@ -21,6 +21,8 @@ Route::group([
     'middleware' => 'localization'], function() {
     Route::get('/', 'Front\MainPageController@index')->name('main');
     Route::get('/news', 'Front\NewsController@index')->name('news');
+    Route::get('/memory', 'Front\VeteransController@index')->name('memory');
+    Route::get('/memory/{region}', 'Front\VeteransController@indexByRegion')->name('memory.regions');
 });
 
 Auth::routes([

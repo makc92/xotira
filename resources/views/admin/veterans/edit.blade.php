@@ -10,7 +10,7 @@
         @include('layouts.errors')
     @endif
     @include('flash::message')
-    {!! Form::open(['route' => ['admin.veterans.update',$veteran->id], 'method'=>'put','enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['route' => ['admin.memory.update',$veteran->id], 'method'=>'put','enctype' => 'multipart/form-data']) !!}
 
     <div class="row">
         <div class="col-9">
@@ -104,7 +104,7 @@
                         {{Form::select('region_id', $regionList, $selectedRegion ,['class' => 'form-control'])}}
                     </div>
                     <button type="submit" class="btn btn-info"><i class="fas fa-edit"></i> Update Veteran</button>
-                    <a href="{{route('admin.veterans.index')}}" class="btn btn-primary"><i
+                    <a href="{{route('admin.memory.index')}}" class="btn btn-primary"><i
                             class="fas fa-angle-double-left"></i> Back</a>
                 </div>
             </div>

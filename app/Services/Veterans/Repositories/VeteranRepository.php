@@ -14,7 +14,7 @@ class VeteranRepository
      */
     public function getAll()
     {
-        return Veteran::with('translation')->orderBy('id', 'desc')->get();
+        return Veteran::with('translations')->orderBy('id', 'desc')->get();
     }
 
     /**
@@ -22,7 +22,7 @@ class VeteranRepository
      */
     public function paginate()
     {
-        return Veteran::with('translation')->orderBy('id', 'desc')->paginate(10);
+        return Veteran::with('translations')->orderBy('id', 'desc')->paginate(10);
     }
 
     /**
@@ -31,7 +31,7 @@ class VeteranRepository
      */
     public function searchByName($text)
     {
-        return Veteran::with('translation')->whereTranslationLike('name', '%' . $text . '%')->orderBy('id', 'desc')->paginate(10);
+        return Veteran::with('translations')->whereTranslationLike('name', '%' . $text . '%')->orderBy('id', 'desc')->paginate(10);
     }
 
     /**
@@ -66,5 +66,22 @@ class VeteranRepository
     {
         $veteran = $veteran->update($data);
         return $veteran;
+    }
+
+    public function searchByNameOrderByName($text,$number)
+    {
+        return Veteran::with('translations')->whereTranslationLike('name', '%' . $text . '%')->orderByTranslation('name', 'ASC')->paginate($number);
+    }
+
+    public function searchByRegion($text, $number, $region)
+    {
+        return Veteran::with('translations','region')->whereTranslationLike('name', '%' . $text . '%')
+            ->whereRegionId($region)
+            ->orderByTranslation('name', 'ASC')->paginate($number);
+    }
+
+    public function searchByLetter($letter,$number,$region)
+    {
+        return Veteran::with('translations','region')->whereTranslationLike('name', $letter . '%')->whereRegionId($region)->orderByTranslation('name', 'ASC')->paginate($number);
     }
 }

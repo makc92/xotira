@@ -7,7 +7,8 @@ use Faker\Generator as Faker;
 $factory->define(Veteran::class, function (Faker $faker) {
     return [
         /*'thumbnail' => $faker->imageUrl('300','300', 'people'),*/
-        "thumbnail" => "http://lorempixel.com/300/300/people/",
-        'region_id' => 1
+        "thumbnail" => "",
+        'region_id' => $faker->numberBetween($min = 1, $max = 14)
+        /*'region_id' => 1*/
     ];
 });

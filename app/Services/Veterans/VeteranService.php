@@ -65,4 +65,18 @@ class VeteranService
     {
         return $this->updateVeteranHandler->handle($veteran, $data);
     }
+    public function searchVeteransByNameOrderByName($text, $number)
+    {
+        return $this->veteranRepository->searchByNameOrderByName($text, $number);
+    }
+
+    public function searchVeteranByRegion($text,$number,$region)
+    {
+        return $this->veteranRepository->searchByRegion($text, $number, $region);
+    }
+
+    public function searchVeteranByLetter($letter, $number,$region)
+    {
+        return $this->veteranRepository->searchByLetter($letter, $number,$region);
+    }
 }

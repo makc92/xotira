@@ -5,13 +5,14 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-end">
                 <div class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-end">
-                    @foreach(config('app.languages') as $locale)
+                   @foreach(config('app.languages') as $locale)
                         <a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}"
                            class="text-link-white-2 line-height-normal"
                            @if (app()->getLocale() === $locale) style="font-weight: bold; text-decoration: underline" @endif
                         >{{ strtoupper($locale) }}</a>
                         <div class="separator-line-verticle-extra-small bg-dark-gray display-inline-block margin-two-half-lr position-relative vertical-align-middle"></div>
                     @endforeach
+                    @yield('page_lang')
                 </div>
             </div>
         </div>
@@ -31,8 +32,8 @@
                 <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
                     <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
                         <li><a href="{{route('main', app()->getLocale())}}" title="Home" class="inner-link">Asosiy</a></li>
-                        <li><a href="#news" title="Home" class="inner-link">Янгиликлар</a></li>
-                        <li><a href="#memory" title="About" class="inner-link">Хотира китоби</a></li>
+                        <li><a href="{{route('news', app()->getLocale())}}" title="Home" class="inner-link">Янгиликлар</a></li>
+                        <li><a href="{{route('memory', app()->getLocale())}}" title="About" class="inner-link">Хотира китоби</a></li>
                         <li><a href="#museum" title="Team" class="inner-link">Музей</a></li>
                         <li><a href="#lib" title="Blog" class="inner-link">Электрон кутубхона</a></li>
                         <li><a href="#photo" title="Work" class="inner-link">Медиатека</a></li>
