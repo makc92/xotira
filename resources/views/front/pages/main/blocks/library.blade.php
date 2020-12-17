@@ -9,7 +9,7 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since. Lorem Ipsum has been the industry's standard dummy text
                     ever since. Lorem Ipsum is printing and typesetting simply dummy text.</p>
-                <a href="./library.html"
+                <a href="{{route('library', app()->getLocale())}}"
                    class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top">Batafsil</a>
             </div>
             <div class="col-12 col-lg-5 text-center md-margin-30px-bottom wow fadeInRight">

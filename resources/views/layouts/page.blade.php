@@ -56,8 +56,9 @@
                         <li><a href="{{route('main', app()->getLocale())}}" title="Home" class="inner-link">Asosiy</a></li>
                         <li><a href="{{route('news', app()->getLocale())}}" title="Home" class="inner-link">Янгиликлар</a></li>
                         <li><a href="{{route('memory', app()->getLocale())}}" title="About" class="inner-link">Хотира китоби</a></li>
+                        <li><a href="{{route('achievements', app()->getLocale())}}" title="About" class="inner-link">Тақдирлар</a></li>
                         <li><a href="#museum" title="Team" class="inner-link">Музей</a></li>
-                        <li><a href="#lib" title="Blog" class="inner-link">Электрон кутубхона</a></li>
+                        <li><a href="{{route('library', app()->getLocale())}}" title="Blog" class="inner-link">Электрон кутубхона</a></li>
                         <li><a href="#photo" title="Work" class="inner-link">Медиатека</a></li>
                         <li><a href="#form" title="Clients" class="inner-link">Маълумот қолдириш</a></li>
                         <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->

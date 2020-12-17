@@ -12,4 +12,10 @@ class NewsController extends Controller
     {
         return view('front.pages.news.index');
     }
+
+    public function show($locale, $slug)
+    {
+        $news = News::whereTranslationLike('slug', $slug)->first();
+        return view('front.pages.news.show', compact(['news']));
+    }
 }

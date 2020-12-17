@@ -50,4 +50,9 @@ class BooksService
     {
         return $this->updateBookHandler->handle($book,$data);
     }
+
+    public function pagenateBooks($number)
+    {
+        return $this->booksRepository->paginate($number);
+    }
 }

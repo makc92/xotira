@@ -37,8 +37,22 @@ class BooksRepository
         return $book;
     }
 
+    /**
+     * @param Book $book
+     * @return bool|null
+     * @throws \Exception
+     */
     public function delete(Book $book)
     {
         return $book->delete();
+    }
+
+    /**
+     * @param $number
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
+     */
+    public function paginate($number): \Illuminate\Contracts\Pagination\LengthAwarePaginator
+    {
+        return Book::orderBy('id', 'DESC')->paginate($number);
     }
 }

@@ -50,4 +50,9 @@ class AchievementService
     {
         return $this->updateAchievementHandler->handle($achievement, $data);
     }
+
+    public function paginateAchievements($number)
+    {
+        return $this->achievementRepository->paginate($number);
+    }
 }

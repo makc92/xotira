@@ -21,8 +21,12 @@ Route::group([
     'middleware' => 'localization'], function() {
     Route::get('/', 'Front\MainPageController@index')->name('main');
     Route::get('/news', 'Front\NewsController@index')->name('news');
+    Route::get('/news/{slug}', 'Front\NewsController@show')->name('news.show');
     Route::get('/memory', 'Front\VeteransController@index')->name('memory');
     Route::get('/memory/{region}', 'Front\VeteransController@indexByRegion')->name('memory.regions');
+    Route::get('/achievements', 'Front\AchievementsController@index')->name('achievements');
+    Route::get('/achievements/{slug}', 'Front\AchievementsController@show')->name('achievements.show');
+    Route::get('/library', 'Front\LibraryController@index')->name('library');
 });
 
 Auth::routes([

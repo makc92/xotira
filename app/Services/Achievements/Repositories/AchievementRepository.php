@@ -41,4 +41,9 @@ class AchievementRepository
     {
         return $achievement->delete();
     }
+
+    public function paginate($number)
+    {
+        return Achievement::withTranslation()->orderBy('id', 'desc')->paginate($number);
+    }
 }
