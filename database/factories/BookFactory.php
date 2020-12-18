@@ -8,7 +8,7 @@ use Illuminate\Support\Carbon;
 $factory->define(Book::class, function (Faker $faker) {
     return [
         'title' => $faker->word,
-        'thumbnail' => $faker->word,
+        'thumbnail' => '',
         'book' => $faker->word,
         'description' =>  [
             "uz"=> "UZ ". $faker->text,

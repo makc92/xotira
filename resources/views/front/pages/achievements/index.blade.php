@@ -13,13 +13,13 @@
     @endforeach
 @endsection
 @section('page_content')
-    <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style="background-image: url('{{asset('./images/main2.jpg')}}');">
+    <section class="parallax" data-stellar-background-ratio="0.5" style="background-image: url('{{asset('./images/main2.jpg')}}');">
         <div class="opacity-medium bg-extra-dark-gray"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
                     <!-- start page title -->
-                    <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">Тақдирлар</h1>
+                    <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">{{__('menu.achievement')}}</h1>
                     <!-- end page title -->
                 </div>
             </div>

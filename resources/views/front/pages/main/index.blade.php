@@ -34,6 +34,7 @@
 
 @include('front.pages.main.blocks.book')
 
+@include('front.pages.main.blocks.achievements')
 @include('front.pages.main.blocks.museum')
 
 @include('front.pages.main.blocks.library')

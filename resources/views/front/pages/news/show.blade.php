@@ -10,7 +10,7 @@
     @endforeach
 @endsection
 @section('page_content')
-    <section class="wow fadeIn background-park-light">
+    <section>
         <div class="container">
             <div class="col-12 mx-auto last-paragraph-no-margin text-justify text-md-left">
                 <img src="{{$news->getImagePath('thumbnail')}}" alt="" class="width-100 margin-50px-bottom md-margin-30px-bottom" style="box-shadow: 0 0 10px rgba(0,0,0,.2)">

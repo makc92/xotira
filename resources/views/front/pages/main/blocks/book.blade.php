@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
                 <div class="position-relative overflow-hidden w-100">
-                    <h4 class="alt-font text-white margin-15px-bottom sm-margin-20px-bottom">Хотира китоби</h4>
+                    <h4 class="alt-font text-white margin-15px-bottom sm-margin-20px-bottom">{{__('menu.memory')}}</h4>
                 </div>
             </div>
         </div>

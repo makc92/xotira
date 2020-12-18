@@ -1,5 +1,5 @@
 <div>
-    <section>
+    <section id="library">
         <div class="container">
             <div class="row">
                 @foreach($books as $book)

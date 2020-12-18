@@ -13,7 +13,7 @@
     <section class="wow fadeIn background-park-light">
         <div class="container">
             <div class="col-12 mx-auto last-paragraph-no-margin text-justify text-md-left">
-                <img src="{{$achievement->getImagePath('thumbnail')}}" alt="" class="width-100 margin-50px-bottom md-margin-30px-bottom" style="box-shadow: 0 0 10px rgba(0,0,0,.2)">
+                <img src="{{$achievement->getImagePath('thumbnail', 'medium')}}" alt="" class="width-100 margin-50px-bottom md-margin-30px-bottom" style="box-shadow: 0 0 10px rgba(0,0,0,.2)">
                 <h5 class="alt-font font-weight-600 text-extra-dark-gray">{{$achievement->translate(app()->getLocale())->title}}</h5>
                 <div class="news-show">
                     {!! $achievement->translate(app()->getLocale())->content!!}

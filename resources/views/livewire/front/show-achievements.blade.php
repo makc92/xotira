@@ -9,7 +9,7 @@
                         <div class="blog-post blog-post-style1 text-center text-md-left">
                             <div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
                                 <a href="{{route('achievements.show',[app()->getLocale(),$achievement->translate(app()->getLocale())->slug] )}}">
-                                    <img src="{{$achievement->getImagePath('thumbnail', 'normal')}}" alt="">
+                                    <img src="{{$achievement->thumbnail ? $achievement->getImagePath('thumbnail', 'thumb') : asset('images/achievement.jpg')}}" alt="">
                                 </a>
                             </div>
                             <div class="post-details">

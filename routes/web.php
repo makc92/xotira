@@ -12,9 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
+/*Route::get('/', function () {
     return redirect(app()->getLocale());
-});
+});*/
+Route::get('/', 'RedirectController');
 Route::group([
     'prefix' => '{locale}',
     'where' => ['locale' => '[a-zA-Z]{2}'],
@@ -27,6 +28,7 @@ Route::group([
     Route::get('/achievements', 'Front\AchievementsController@index')->name('achievements');
     Route::get('/achievements/{slug}', 'Front\AchievementsController@show')->name('achievements.show');
     Route::get('/library', 'Front\LibraryController@index')->name('library');
+    Route::get('/info', 'Front\InfoController@index')->name('info');
 });
 
 Auth::routes([

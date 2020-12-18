@@ -53,14 +53,14 @@
                 </button>
                 <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
                     <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
-                        <li><a href="{{route('main', app()->getLocale())}}" title="Home" class="inner-link">Asosiy</a></li>
-                        <li><a href="{{route('news', app()->getLocale())}}" title="Home" class="inner-link">Янгиликлар</a></li>
-                        <li><a href="{{route('memory', app()->getLocale())}}" title="About" class="inner-link">Хотира китоби</a></li>
-                        <li><a href="{{route('achievements', app()->getLocale())}}" title="About" class="inner-link">Тақдирлар</a></li>
-                        <li><a href="#museum" title="Team" class="inner-link">Музей</a></li>
-                        <li><a href="{{route('library', app()->getLocale())}}" title="Blog" class="inner-link">Электрон кутубхона</a></li>
-                        <li><a href="#photo" title="Work" class="inner-link">Медиатека</a></li>
-                        <li><a href="#form" title="Clients" class="inner-link">Маълумот қолдириш</a></li>
+                        <li><a href="{{route('main', app()->getLocale())}}" title="Asosiy" class="inner-link">Asosiy</a></li>
+                        <li><a href="{{route('news', app()->getLocale())}}" title="{{__('menu.news')}}" class="inner-link">{{__('menu.news')}}</a></li>
+                        <li><a href="{{route('memory', app()->getLocale())}}" title="{{__('menu.memory')}}" class="inner-link">{{__('menu.memory')}}</a></li>
+                        <li><a href="{{route('achievements', app()->getLocale())}}" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
+                        <li><a href="#museum" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>
+                        <li><a href="{{route('library', app()->getLocale())}}" title="{{__('menu.library')}}" class="inner-link">{{__('menu.library')}}</a></li>
+                        <li><a href="#photo" title="{{__('menu.photo')}}" class="inner-link">{{__('menu.photo')}}</a></li>
+                        <li><a href="#form" title="{{__('menu.info')}}" class="inner-link">{{__('menu.info')}}</a></li>
                         <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->
                     </ul>
                 </div>

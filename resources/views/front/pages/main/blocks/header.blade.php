@@ -28,12 +28,13 @@
                 </button>
                 <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
                     <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
-                        <li><a href="#news" title="Home" class="inner-link">Янгиликлар</a></li>
-                        <li><a href="#memory" title="About" class="inner-link">Хотира китоби</a></li>
-                        <li><a href="#museum" title="Team" class="inner-link">Музей</a></li>
-                        <li><a href="#lib" title="Blog" class="inner-link">Электрон кутубхона</a></li>
-                        <li><a href="#photo" title="Work" class="inner-link">Медиатека</a></li>
-                        <li><a href="#form" title="Clients" class="inner-link">Маълумот қолдириш</a></li>
+                        <li><a href="#news" title="{{__('menu.news')}}" class="inner-link">{{__('menu.news')}}</a></li>
+                        <li><a href="#memory" title="{{__('menu.memory')}}" class="inner-link">{{__('menu.memory')}}</a></li>
+                        <li><a href="#memory" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
+                        <li><a href="#museum" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>
+                        <li><a href="#lib" title="{{__('menu.library')}}" class="inner-link">{{__('menu.library')}}</a></li>
+                        <li><a href="#photo" title="{{__('menu.photo')}}" class="inner-link">{{__('menu.photo')}}</a></li>
+                        <li><a href="#form" title="{{__('menu.info')}}" class="inner-link">{{__('menu.info')}}</a></li>
                         <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->
                     </ul>
                 </div>

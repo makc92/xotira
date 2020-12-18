@@ -9920,7 +9920,7 @@ header nav .navbar-nav>li>a {
     color: #232323;
     font-size: 12px;
     font-weight: 800;
-    margin: 0 20px;
+    /*margin: 0 20px;*/
     padding: 5px 0px 5px;
     text-transform: uppercase;
     letter-spacing: 0.015em;
@@ -10969,7 +10969,7 @@ header nav.nav-full-width {
 
 /* container fluid navigation padding */
 header nav.nav-box-width {
-    padding: 0 50px;
+   /* padding: 0 50px;*/
 }
 
 /* hamburger menu right side */
@@ -16361,6 +16361,18 @@ figure {
 
 .blog-post.blog-post-style1 .blog-post-images img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#achievements .blog-post.blog-post-style1 .blog-post-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#library .blog-post.blog-post-style1 .blog-post-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .blog-post.blog-post-style1:hover .blog-post-images img {
