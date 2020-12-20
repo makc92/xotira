@@ -53,6 +53,7 @@ Route::group(
         Route::resource('books', 'BooksController');
         Route::resource('achievements', 'AchievementsController');
         Route::resource('applications', 'ApplicationsController');
+        Route::resource('photos', 'PhotosController');
     }
 );
 

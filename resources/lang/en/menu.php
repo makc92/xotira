@@ -21,4 +21,5 @@ return array (
   'activity' => 'Museum activity',
   'services' => 'Services',
   'library' => 'E-library',
+  'main' => 'Main',
 );

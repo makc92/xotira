@@ -41,44 +41,10 @@
 @include('front.pages.main.blocks.gallery')
 
 @include('front.pages.main.blocks.form')
-
-
-<!-- start footer -->
-<footer class="footer-strip-dark bg-extra-dark-gray padding-50px-tb sm-padding-30px-tb">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- start logo -->
-            <div class="col-md-3 text-center text-lg-left sm-margin-20px-bottom">
-                <a href="javascript:void(0);"><img class="footer-logo" src="images/logo.jpg" alt="Logo" width="100"></a>
-            </div>
-            <!-- end logo -->
-            <!-- start copyright -->
-            <div class="col-md-6 text-center text-small alt-font sm-margin-10px-bottom text-white">
-                &copy; 2020
-            </div>
-            <!-- end copyright -->
-            <!-- start social media -->
-            <div class="col-md-3 text-center text-lg-right">
-                <div class="social-icon-style-8 d-inline-block vertical-align-middle">
-                    <ul class="small-icon mb-0">
-                        <li><a class="facebook text-white-2" href="https://www.facebook.com/" target="_blank"><i
-                                    class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li><a class="twitter text-white-2" href="https://twitter.com/" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a class="google text-white-2" href="https://plus.google.com" target="_blank"><i
-                                    class="fab fa-google-plus-g"></i></a></li>
-                        <li><a class="instagram text-white-2" href="https://instagram.com/" target="_blank"><i
-                                    class="fab fa-instagram mr-0" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- end social media -->
-        </div>
-    </div>
-</footer>
-<!-- end footer -->
+@include('front.pages.main.blocks.3d')
+@include('blocks.footer')
 <!-- start scroll to top -->
-<a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+<a class="scroll-top-arrow" href="javascript:void(0);"><i class="fas fa-arrow-up"></i></a>
 <!-- end scroll to top  -->
 <!-- javascript libraries -->
 <script type="text/javascript" src="{{asset('./js/main.js')}}"></script>

@@ -30,7 +30,7 @@
                     <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
                         <li><a href="#news" title="{{__('menu.news')}}" class="inner-link">{{__('menu.news')}}</a></li>
                         <li><a href="#memory" title="{{__('menu.memory')}}" class="inner-link">{{__('menu.memory')}}</a></li>
-                        <li><a href="#memory" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
+                        <li><a href="#achievement" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
                         <li><a href="#museum" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>
                         <li><a href="#lib" title="{{__('menu.library')}}" class="inner-link">{{__('menu.library')}}</a></li>
                         <li><a href="#photo" title="{{__('menu.photo')}}" class="inner-link">{{__('menu.photo')}}</a></li>

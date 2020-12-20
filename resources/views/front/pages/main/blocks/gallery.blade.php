@@ -13,10 +13,11 @@
                 <ul class="portfolio-grid work-3col hover-option4 gutter-medium">
                     <li class="grid-sizer"></li>
                     <!-- start portfolio item -->
+                    @foreach($photos as $photo)
                     <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto1.jpg" title="Lightbox gallery image title...">
+                        <a href="{{$photo->thumbnail ? $photo->getImagePath('thumbnail', 'medium') : asset('images/photo.jpg')}}" title="Lightbox gallery image title...">
                             <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto1.jpg" alt=""
+                                <div class="portfolio-img bg-extra-dark-gray"><img src="{{$photo->thumbnail ? $photo->getImagePath('thumbnail', 'medium') : asset('images/photo.jpg')}}" alt=""
                                                                                    class="project-img-gallery"/></div>
                                 <figcaption>
                                     <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
@@ -28,91 +29,7 @@
                             </figure>
                         </a>
                     </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto2.jpg" title="Lightbox gallery image title...">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto2.jpg" alt=""
-                                                                                   class="project-img-gallery"/></div>
-                                <figcaption>
-                                    <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto3.jpg" title="Lightbox gallery image title...">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto3.jpg" alt=""
-                                                                                   class="project-img-gallery"/></div>
-                                <figcaption>
-                                    <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto3.jpg" title="Lightbox gallery image title...">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto3.jpg" alt=""
-                                                                                   class="project-img-gallery"/></div>
-                                <figcaption>
-                                    <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto1.jpg" title="Lightbox gallery image title...">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto1.jpg" alt=""
-                                                                                   class="project-img-gallery"/></div>
-                                <figcaption>
-                                    <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <!-- end portfolio item -->
-                    <!-- start portfolio item -->
-                    <li class="grid-item web branding design wow fadeInUp">
-                        <a href="./images/foto3.jpg" title="Lightbox gallery image title...">
-                            <figure>
-                                <div class="portfolio-img bg-extra-dark-gray"><img src="./images/foto3.jpg" alt=""
-                                                                                   class="project-img-gallery"/></div>
-                                <figcaption>
-                                    <div class="portfolio-hover-main d-flex justify-content-center align-items-center">
-                                        <div class="portfolio-hover-content position-relative">
-                                            <i class="ti-zoom-in text-white-2 fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
+                    @endforeach
                     <!-- end portfolio item -->
                 </ul>
             </div>

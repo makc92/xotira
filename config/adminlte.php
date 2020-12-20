@@ -232,6 +232,11 @@ return [
 
     'menu' => [
         [
+            'text' => 'Сайт',
+            'url'  => '/',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
             'text' => 'Пользователи',
             'url'  => 'admin/users',
             'icon' => 'fas fa-fw fa-user',
@@ -259,6 +264,11 @@ return [
         [
             'text' => 'Заявки',
             'url'  => 'admin/applications',
+            'icon' => 'fas fa-file',
+        ],
+        [
+            'text' => 'Фотогаллереая',
+            'url'  => 'admin/photos',
             'icon' => 'fas fa-file',
         ],
     ],

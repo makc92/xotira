@@ -21,4 +21,5 @@ return array (
   'activity' => 'Muzey faoliyati',
   'services' => 'Xizmatlar',
   'library' => 'Electron kutubxona',
+  'main' => 'Asosiy',
 );
