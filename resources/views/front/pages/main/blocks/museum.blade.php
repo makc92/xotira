@@ -6,10 +6,8 @@
                 class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInLeft"
                 data-wow-delay="0.2s">
                 <h4 class="alt-font text-extra-dark-gray">{{__('menu.museum')}}</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since. Lorem Ipsum has been the industry's standard dummy text
-                    ever since. Lorem Ipsum is printing and typesetting simply dummy text.</p>
-                <a href="./muzeum.html" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top">Batafsil</a>
+                <p>{{__('main.museum')}}</p>
+                <a href="{{route('museum.main', app()->getLocale())}}" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top">Batafsil</a>
             </div>
             <div class="col-12 col-lg-5 text-center md-margin-30px-bottom wow fadeInRight">
                 <img src="{{asset('images/main3.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">

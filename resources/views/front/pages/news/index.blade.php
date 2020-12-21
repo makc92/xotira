@@ -1,4 +1,7 @@
 @extends('layouts.page')
+@section('page_title')
+    {{__('menu.news')}}
+@endsection
 
 @section('page_styles')
     @livewireStyles

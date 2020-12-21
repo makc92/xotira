@@ -30,7 +30,12 @@
     </section>
     <section id="info">
         <div class="container">
-            <form id="project-contact-form" action="project-contact.php" method="post">
+            @if ($errors->any())
+                @include('layouts.errors')
+            @endif
+            @include('flash::message')
+            <form action="{{route('info.send', app()->getLocale())}}">
+                @method('POST')
                 <div class="row">
                     <div class="col-12">
                         <div id="success-project-contact-form" class="mx-0" style="display: none;"></div>
@@ -48,10 +53,17 @@
                         <input type="text" name="address" id="address" placeholder="Mavzu *" class="big-input">
                     </div>
                     <div class="col-12">
-                        <textarea name="comment" id="comment" placeholder="Xabar" rows="6" class="big-textarea"></textarea>
+                        <textarea name="message" id="message" placeholder="Xabar" rows="6" class="big-textarea"></textarea>
                     </div>
+                    <div class="col-12 captcha mb-3">
+                        {!! Captcha::img() !!}
+                    </div>
+                    <div class="col-2 captcha">
+                        <input type="text" name="captcha" id="captcha">
+                    </div>
+
                     <div class="col-12 text-center">
-                        <button id="project-contact-us-button" type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">Jo'natish</button>
+                        <button type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">Jo'natish</button>
                     </div>
                 </div>
             </form>

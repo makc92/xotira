@@ -17838,3 +17838,7 @@ aside .latest-post li figure {
 .footer-logo {
     max-height: 50px;
 }
+
+footer a:active, a:hover {
+    color: #fff;
+}

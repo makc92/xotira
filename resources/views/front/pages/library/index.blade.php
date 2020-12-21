@@ -1,10 +1,13 @@
 @extends('layouts.page')
+@section('page_title')
+    {{__('menu.library')}}
+@endsection
 
 @section('page_styles')
     @livewireStyles
 @endsection
 @section('page_lang')
-    @foreach(config('app.languages') as $locale)
+    @foreach(config('app.languages') as $locale)d
         <a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}"
            class="text-link-white-2 line-height-normal"
            @if (app()->getLocale() === $locale) style="font-weight: bold; text-decoration: underline" @endif

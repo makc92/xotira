@@ -28,4 +28,9 @@ class ApplicationService
     {
         return $this->applicationRepository->delete($application);
     }
+
+    public function createApplication($data)
+    {
+        return $this->applicationRepository->createFromArray($data);
+    }
 }

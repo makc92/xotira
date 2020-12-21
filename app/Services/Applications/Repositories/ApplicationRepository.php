@@ -17,4 +17,9 @@ class ApplicationRepository
     {
         return $application->delete();
     }
+
+    public function createFromArray($data)
+    {
+        return Application::create($data);
+    }
 }

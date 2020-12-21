@@ -16,6 +16,7 @@ const mix = require('laravel-mix');
 
 mix.styles([
     'resources/assets/css/font-awesome.css',
+    'resources/assets/css/themify-icons.css',
     'resources/assets/css/bootstrap.min.css',
     'resources/assets/css/swiper.min.css',
     'resources/assets/css/justified-gallery.min.css',
@@ -56,6 +57,10 @@ mix.scripts([
 
 mix.copy('resources/assets/webfonts', 'public/webfonts');
 mix.copy('resources/assets/images', 'public/images');
+mix.copy('resources/assets/fonts', 'public/fonts');
+mix.copy('resources/assets/js/jquery.vmap.js', 'public/js/jquery.vmap.js');
+mix.copy('resources/assets/js/vmap.uzbekistan.js', 'public/js/vmap.uzbekistan.js');
+mix.copy('resources/assets/css/jqvmap.css', 'public/css/jqvmap.css');
 
 
 if (mix.inProduction()) {

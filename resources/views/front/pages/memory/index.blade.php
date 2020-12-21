@@ -1,6 +1,6 @@
 @extends('layouts.page')
 @section('page_title')
-    Хотира Китоби
+    {{__('menu.memory')}}
 @endsection
 @section('page_styles')
     @livewireStyles

@@ -9,9 +9,7 @@
                 class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInRight"
                 data-wow-delay="0.2s">
                 <h4 class="alt-font text-extra-dark-gray">{{__('menu.library')}}</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since. Lorem Ipsum has been the industry's standard dummy text
-                    ever since. Lorem Ipsum is printing and typesetting simply dummy text.</p>
+                <p>{{__('main.library')}}</p>
                 <a href="{{route('library', app()->getLocale())}}"
                    class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top">Batafsil</a>
             </div>

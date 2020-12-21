@@ -1,5 +1,7 @@
 @extends('layouts.page')
-
+@section('page_title')
+    {{__('menu.achievement')}}
+@endsection
 @section('page_styles')
     @livewireStyles
 @endsection

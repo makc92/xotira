@@ -1,3 +1,4 @@
+{{--
 <section id="3d">
     <div class="container">
         <div class="row justify-content-center">
@@ -9,3 +10,23 @@
         </div>
     </div>
 </section>
+--}}
+
+<!-- start 3d section -->
+<section class="wow bg-light-gray fadeIn" id="3d">
+    <div class="container">
+        <div class="row align-items-center">
+            <div
+                class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInLeft"
+                data-wow-delay="0.2s">
+                <h4 class="alt-font text-extra-dark-gray">{{__('menu.3d')}}</h4>
+                <p>{{__('main.museum')}}</p>
+                <a href="https://uzbekistan360.uz/ru/location/telebasna-oJ-k" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top" target="_blank">Batafsil</a>
+            </div>
+            <div class="col-12 col-lg-5 text-center md-margin-30px-bottom wow fadeInRight">
+                <img src="{{asset('images/3d.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end 3d section -->

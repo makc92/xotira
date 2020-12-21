@@ -57,10 +57,10 @@
                         <li><a href="{{route('news', app()->getLocale())}}" title="{{__('menu.news')}}" class="inner-link">{{__('menu.news')}}</a></li>
                         <li><a href="{{route('memory', app()->getLocale())}}" title="{{__('menu.memory')}}" class="inner-link">{{__('menu.memory')}}</a></li>
                         <li><a href="{{route('achievements', app()->getLocale())}}" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
-                        <li><a href="#museum" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>
+                        <li><a href="{{route('museum.main', app()->getLocale())}}" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>
                         <li><a href="{{route('library', app()->getLocale())}}" title="{{__('menu.library')}}" class="inner-link">{{__('menu.library')}}</a></li>
-                        <li><a href="#photo" title="{{__('menu.photo')}}" class="inner-link">{{__('menu.photo')}}</a></li>
-                        <li><a href="#form" title="{{__('menu.info')}}" class="inner-link">{{__('menu.info')}}</a></li>
+                        <li><a href="{{route('photos', app()->getLocale())}}" title="{{__('menu.photo')}}" class="inner-link">{{__('menu.photo')}}</a></li>
+                        <li><a href="{{route('info', app()->getLocale())}}" title="{{__('menu.info')}}" class="inner-link">{{__('menu.info')}}</a></li>
                         <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->
                     </ul>
                 </div>
@@ -78,8 +78,8 @@
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
 <!-- end scroll to top  -->
 <!-- javascript libraries -->
-@yield('page_scripts')
 <script type="text/javascript" src="{{asset('./js/main.js')}}"></script>
+@yield('page_scripts')
 </body>
 
 </html>

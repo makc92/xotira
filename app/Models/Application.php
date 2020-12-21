@@ -30,5 +30,5 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Application extends Model
 {
-    protected $fillable = ['title','phone','email','address','message'];
+    protected $fillable = ['name','phone','email','address','message'];
 }

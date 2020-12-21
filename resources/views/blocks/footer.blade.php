@@ -3,13 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 widget border-right border-color-medium-dark-gray md-no-border-right md-margin-30px-bottom sm-text-center">
-                    <!-- start logo -->
-{{--
-                    <a href="index.html" class="margin-20px-bottom d-inline-block"><img class="footer-logo" src="{{asset('images/logo_museum.png')}}" alt=""></a>
---}}
-                    <!-- end logo -->
                     <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Қатағон қурбонлари портали</div>
-                    <p class=" width-95 sm-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class=" width-95 sm-width-100">Режим работы: Вторник-пятница с 9:00 до 17:00
+                        Воскресенье с 10:00 до 15:00 Обед: с 13:00 до 14:00
+                        Выходной день: Понедельник</p>
                     <!-- start social media -->
                     <div class="social-icon-style-8 d-inline-block vertical-align-middle">
                         <ul class="small-icon no-margin-bottom">

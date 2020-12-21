@@ -269,7 +269,7 @@ return [
         [
             'text' => 'Фотогаллереая',
             'url'  => 'admin/photos',
-            'icon' => 'fas fa-file',
+            'icon' => 'fas fa-images',
         ],
     ],
 
