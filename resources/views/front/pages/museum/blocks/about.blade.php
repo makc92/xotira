@@ -1,17 +1,38 @@
 <!-- start Музей section -->
 <section class="wow bg-light-gray fadeIn" id="museum">
     <div class="container">
-        <div class="row align-items-center">
-            <div
-                class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInLeft"
-                data-wow-delay="0.2s">
-                <h4 class="alt-font text-extra-dark-gray">{{__('menu.museum')}}</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since. Lorem Ipsum has been the industry's standard dummy text
-                    ever since. Lorem Ipsum is printing and typesetting simply dummy text.</p>
+        <div class="row align-items-center justify-content-center mb-5">
+            <div class="col-12">
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 text-center mb-5">{{__('about_muzeum.title')}}</h5>
             </div>
-            <div class="col-12 col-lg-5 text-center md-margin-30px-bottom wow fadeInRight">
-                <img src="{{asset('images/museum_about.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">
+            <div class="col-lg-5 col-sm-8 col-10 text-center md-margin-30px-bottom wow fadeInLeft">
+                <img src="{{asset('./images/about_museum_1.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">
+            </div>
+            <div
+                class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInRight"
+                data-wow-delay="0.2s">
+                <p class="mn-0">{{__('about_muzeum.text-1')}}</p>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center mb-5">
+            <div
+                class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInLeft mb-4"
+                data-wow-delay="0.2s">
+                <p class="mn-0">{{__('about_muzeum.text-2')}}</p>
+            </div>
+            <div class="col-lg-5 col-sm-8 col-10 text-center md-margin-30px-bottom wow fadeInRight">
+                <img src="{{asset('images/about_museum_2.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5 col-sm-8 col-10 text-center md-margin-30px-bottom wow fadeInLeft">
+                <img src="{{asset('./images/main3.jpg')}}" alt="" class="border-radius-6 w-100" data-no-retina="">
+            </div>
+            <div
+                class="col-12 col-lg-7 text-center md-padding-15px-lr wow fadeInRight"
+                data-wow-delay="0.2s">
+                <p class="mn-0">{{__('about_muzeum.text-3')}}</p>
+                <p class="mn-0">{{__('about_muzeum.text-4')}}</p>
             </div>
         </div>
     </div>

@@ -18,8 +18,10 @@ class CreateApplicationsTable extends Migration
             $table->string('name');
             $table->string('phone');
             $table->string('email');
-            $table->string('address');
+            /*$table->string('address');*/
             $table->longText('message');
+            $table->string('photo')->nullable();
+            $table->string('document')->nullable();
             $table->timestamps();
         });
     }

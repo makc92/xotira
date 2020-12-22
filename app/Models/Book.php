@@ -27,6 +27,7 @@ use KingOfCode\Upload\Uploadable;
  * @method static \Illuminate\Database\Eloquent\Builder|Book whereUpdatedAt($value)
  * @mixin \Eloquent
  */
+
 class Book extends Model
 {
     use Uploadable;

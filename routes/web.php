@@ -29,9 +29,10 @@ Route::group([
     Route::get('/achievements/{slug}', 'Front\AchievementsController@show')->name('achievements.show');
     Route::get('/library', 'Front\LibraryController@index')->name('library');
     Route::get('/info', 'Front\InfoController@index')->name('info');
-    Route::get('/info/sendForm', 'Front\InfoController@store')->name('info.send');
+    Route::post('/info/sendForm', 'Front\InfoController@store')->name('info.send');
     Route::get('/photos', 'Front\PhotosController')->name('photos');
     Route::view('/museum', 'front.pages.museum.index')->name('museum.main');
+    Route::view('/museum/exposition', 'front.pages.museum.exposition')->name('museum.exposition');
 });
 
 Auth::routes([

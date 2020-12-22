@@ -10,8 +10,10 @@ $factory->define(Application::class, function (Faker $faker) {
         'name' => $faker->name,
         'phone' => $faker->phoneNumber,
         'email' => $faker->unique()->safeEmail,
-        'address' => $faker->address,
+        /*'address' => $faker->address,*/
         'message' => $faker->realText(100,2),
+        'photo' => null,
+        'document' => null,
         'created_at' => Carbon::now(),
         'updated_at' => Carbon::now(),
     ];

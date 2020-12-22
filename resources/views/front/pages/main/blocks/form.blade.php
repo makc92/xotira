@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 col-md-10 text-center last-paragraph-no-margin">
                 <a class="btn btn-medium btn-white btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto"
-                   href="{{route('info', app()->getLocale())}}">{{__('menu.info')}}</a>
+                   href="{{route('info', app()->getLocale())}}">Batafsil</a>
             </div>
         </div>
     </div>

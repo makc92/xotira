@@ -30,6 +30,7 @@
     </section>
     @include('front.pages.museum.blocks.about')
     @include('front.pages.museum.blocks.region')
+    @include('front.pages.museum.blocks.exposition')
 @endsection
 
 @section('page_scripts')

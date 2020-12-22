@@ -27,8 +27,8 @@ class StoreApplicationRequest extends FormRequest
             'name'=> 'required',
             'phone'=> 'required',
             'email'=> 'required',
-            'address'=> 'required',
             'message'=> 'required',
+            'photo'=> 'required',
             'captcha'=> 'required|captcha',
         ];
     }
