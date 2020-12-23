@@ -26,7 +26,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="front">
 <!-- start header -->
 <header class="header-with-topbar" style="height: 108px">
     <!-- topbar -->

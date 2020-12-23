@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
     return redirect(app()->getLocale());
 });*/
 Route::get('/', 'RedirectController');
+
 Route::group([
     'prefix' => '{locale}',
     'where' => ['locale' => '[a-zA-Z]{2}'],
@@ -33,6 +34,7 @@ Route::group([
     Route::get('/photos', 'Front\PhotosController')->name('photos');
     Route::view('/museum', 'front.pages.museum.index')->name('museum.main');
     Route::view('/museum/exposition', 'front.pages.museum.exposition')->name('museum.exposition');
+    Route::get('/refreshCaptcha', 'Front\RefreshCaptchaController')->name('captcha.refresh');
 });
 
 Auth::routes([

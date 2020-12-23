@@ -25,9 +25,9 @@
                         <li><a href="{{route('news', app()->getLocale())}}">{{__('menu.news')}}</a></li>
                         <li><a href="{{route('memory', app()->getLocale())}}">{{__('menu.memory')}}</a></li>
                         <li><a href="{{route('achievements', app()->getLocale())}}">{{__('menu.achievement')}}</a></li>
-                        <li><a href="{{route('news', app()->getLocale())}}">{{__('menu.museum')}}</a></li>
+                        <li><a href="{{route('museum.main', app()->getLocale())}}">{{__('menu.museum')}}</a></li>
                         <li><a href="{{route('library', app()->getLocale())}}">{{__('menu.library')}}</a></li>
-                        <li><a href="{{route('memory', app()->getLocale())}}">{{__('menu.photo')}}</a></li>
+                        <li><a href="{{route('photos', app()->getLocale())}}">{{__('menu.photo')}}</a></li>
                         <li><a href="{{route('info', app()->getLocale())}}">{{__('menu.info')}}</a></li>
                     </ul>
                 </div>

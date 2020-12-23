@@ -39,7 +39,7 @@
             @include('flash::message')
             <form action="{{route('info.send', app()->getLocale())}}" enctype="multipart/form-data" method="POST">
                 @csrf
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-12 col-lg-6">
                         <input type="text" name="name" id="name" placeholder="{{__('form.name')}}" class="big-input"
                                required>
@@ -56,22 +56,24 @@
                         <textarea name="message" id="message" placeholder="{{__('form.message')}}" rows="6"
                                   class="big-textarea" required></textarea>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 md-margin-10px-bottom">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="validatedPhoto" name="photo">
                             <label class="custom-file-label" for="validatedPhoto">{{__('form.photo')}}</label>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6  md-margin-10px-bottom">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="validatedDocument" name="document">
                             <label class="custom-file-label" for="validatedDocument">{{__('form.document')}}</label>
                         </div>
                     </div>
-                    <div class="col-12 captcha mb-3 mt-3">
-                        {!! Captcha::img() !!}
+                    <div class="col-12 captcha mb-3 mt-3 text-center">
+                        {{--{!! Captcha::img() !!}--}}
+                        <span> {!! captcha_img() !!}</span>
+
                     </div>
-                    <div class="col-2 captcha">
+                    <div class="col-md-4 captcha">
                         <input type="text" name="captcha" id="captcha">
                     </div>
 
@@ -90,7 +92,19 @@
     @livewireScripts
     <script src="//cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
     <script>
-        bsCustomFileInput.init()
+        bsCustomFileInput.init();
+
+        $('.captcha span').click(function (){
+            $.ajax({
+                url: '{{ route('captcha.refresh', app()->getLocale()) }}',
+                type: 'get',
+                success: function (data) {
+                    $('.captcha span').html(data.captcha);
+                }
+            });
+        })
+
+
     </script>
 @endsection
 
