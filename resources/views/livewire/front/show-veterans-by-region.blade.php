@@ -2,28 +2,26 @@
     <section class="" id="memory">
         <div class="container position-relative">
             <div class="row justify-content-center">
-                <div class="col-12 text-center margin-50px-bottom sm-margin-40px-bottom">
+                <div class="col-12 text-center sm-margin-30px-bottom">
                     <div class="position-relative overflow-hidden w-100">
                         <form action="">
-                            <input type="text" name="name" id="name" placeholder="Qidiruv" class="big-input" wire:model="searchVeteran">
-
+                            <input type="text" name="name" id="name" placeholder="Qidiruv" class="big-input m-0" wire:model="searchVeteran">
                         </form>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 mb-5">
+                {{--<div class="col-12 mb-5">
                     @php($array = ['A', 'B', 'C', 'D'])
                     @foreach($array as $arr)
                         <button wire:click="search('{{ $arr}}')">{{$arr}}</button>
                     @endforeach
-                </div>
-                <div class="col-12 mb-5">
+                </div>--}}
+                <div class="col-12 mb-5 text-center">
                     <div wire:loading.delay>
-                        Processing Payment...
+                        <img src="{{asset('/images/wait.gif')}}" alt="">
                     </div>
                 </div>
-
                 <!-- start interactive banners item -->
                 @if($veterans->isNotEmpty())
                     @foreach($veterans as $veteran)
@@ -34,7 +32,7 @@
                                     <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                     <div class="d-table h-100 w-100 position-relative">
                                         <div class="align-middle d-table-cell padding-15px-lr padding-20px-tb">
-                                            <div class="text-white-2 alt-font text-medium margin-15px-bottom name">{{$veteran->name}} - {{$veteran->region->title}}</div>
+                                            <div class="text-white-2 alt-font text-medium margin-15px-bottom name">{{$veteran->name}}</div>
                                             <p class="width-85 mx-auto text-extra-light-gray description">{{$veteran->description}}</p>
                                         </div>
                                     </div>

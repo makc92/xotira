@@ -3,17 +3,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 widget border-right border-color-medium-dark-gray md-no-border-right md-margin-30px-bottom sm-text-center">
-                    <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Қатағон қурбонлари портали</div>
+                    <div class="widget-title alt-font  text-medium-gray text-uppercase margin-10px-bottom font-weight-600">O’zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Qatag’on qurbonlari xotirasi davlat muzeyi</div>
                     <p class=" width-95 sm-width-100">Режим работы: Вторник-пятница с 9:00 до 17:00
                         Воскресенье с 10:00 до 15:00 Обед: с 13:00 до 14:00
                         Выходной день: Понедельник</p>
                     <!-- start social media -->
                     <div class="social-icon-style-8 d-inline-block vertical-align-middle">
                         <ul class="small-icon no-margin-bottom">
-                            <li><a class="facebook text-white-2" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                            <li><a class="twitter text-white-2" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="google text-white-2" href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a class="instagram text-white-2" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
+                            <li><a class="facebook text-white-2" href="https://www.facebook.com/museumRepression/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a class="facebook text-white-2" href="https://t.me/Muzey_Markaz" target="_blank"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <!-- end social media -->
@@ -36,9 +34,9 @@
                 <div class="col-lg-4 col-md-6 widget padding-45px-left md-padding-15px-left md-clear-both md-no-border-right sm-margin-30px-bottom text-center text-md-left">
                     <div class="widget-title alt-font text-medium-gray text-uppercase margin-10px-bottom font-weight-600">Contact Info</div>
                     <p class="d-block margin-15px-bottom width-80 sm-width-100">POFO Design Agency<br> 301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
-                    <div>Email: <a href="mailto:sales@domain.com">sales@domain.com</a></div>
-                    <div>Phone: +44 (0) 123 456 7890</div>
-                    <a href="contact-us-modern.html" class=" text-uppercase text-decoration-underline">View Direction</a>
+                    <div>Email: <a href="mailto:sales@domain.com">INFO@XOTIRA-MUZEY.UZ</a></div>
+                    <div>Phone: (998-71) 2442940</div>
+                    <a href="https://goo.gl/maps/59Gnumcip8QmHALW9" class="text-uppercase text-decoration-underline" target="_blank">Посмотреть на карте</a>
                 </div>
                 <!-- end contact information -->
             </div>
@@ -48,10 +46,7 @@
         <div class="container">
             <div class="row">
                 <!-- start copyright -->
-                <div class="col-md-6 text-md-left  text-center">© 2019 POFO is Proudly Powered by <a href="http://www.themezaa.com" target="_blank" class="text-dark-gray">ThemeZaa</a></div>
-                <div class="col-md-6 text-md-right  text-center">
-                    <a href="javascript:void(0);" class="text-dark-gray">Term and Condition</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="text-dark-gray">Privacy Policy</a>
-                </div>
+                <div class="col-md-12 text-center">© 2020 Powered by <a href="https://www.it-park.uz" target="_blank" class="text-dark-gray">ITPark</a></div>
                 <!-- end copyright -->
             </div>
         </div>

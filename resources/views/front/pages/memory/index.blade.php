@@ -28,9 +28,8 @@
             </div>
         </div>
     </section>
-    <div style="padding-top: 50px">
-        @include('front.pages.memory.blocks.regions')
-    </div>
+    @include('front.pages.memory.blocks.regions')
+
     <livewire:front.show-veterans />
 @endsection
 

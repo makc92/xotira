@@ -19,7 +19,6 @@ class ShowVeteransByRegion extends Component
 
     public function mount($region)
     {
-       /* dd();*/
         $this->region = Region::whereTitle($region)->first();
     }
 
@@ -27,22 +26,23 @@ class ShowVeteransByRegion extends Component
     public function render()
     {
         $veteranService = resolve(VeteranService::class);
-        if($this->flag) {
+        $this->veterans = $veteranService->searchVeteranByRegion($this->searchVeteran, 12, $this->region->id);
+        /*if($this->flag) {
             $this->veterans = $veteranService->searchVeteranByRegion($this->searchVeteran, 12, $this->region->id);
-        }
+        }*/
 
-        if($this->letter) {
+      /*  if($this->letter) {
             $this->veterans = $veteranService->searchVeteranByLetter($this->letter,12, $this->region->id);
-        }
+        }*/
         return view('livewire.front.show-veterans-by-region',[
             'veterans' => $this->veterans
         ]);
     }
 
-    public function search($letter) {
+   /* public function search($letter) {
         $this->letter = $letter;
         $veteranService = resolve(VeteranService::class);
         $this->veterans = $veteranService->searchVeteranByLetter($this->letter,12, $this->region->id);
         $this->flag = false;
-    }
+    }*/
 }

@@ -1,5 +1,5 @@
 <div>
-    <section class="" id="memory">
+    <section class="pt-4" id="memory">
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-12 text-center margin-20px-bottom sm-margin-20px-bottom">
@@ -13,9 +13,9 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 mb-2">
+                <div class="col-12 mb-2 text-center">
                     <div wire:loading.delay>
-                        Processing Payment...
+                        <img src="{{asset('images/wait.gif')}}" alt="">
                     </div>
                 </div>
                 <!-- start interactive banners item -->
@@ -29,7 +29,7 @@
                                     <div class="d-table h-100 w-100 position-relative">
                                         <div class="align-middle d-table-cell padding-15px-lr padding-20px-tb">
                                             <div
-                                                class="text-white-2 alt-font text-medium margin-15px-bottom name">{{$veteran->name}} {{$veteran->region->title}}</div>
+                                                class="text-white-2 alt-font text-medium margin-15px-bottom name">{{$veteran->name}}</div>
                                             <p class="width-85 mx-auto text-extra-light-gray description">{{$veteran->description}}</p>
                                         </div>
                                     </div>

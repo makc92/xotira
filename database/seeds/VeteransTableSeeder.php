@@ -19,13 +19,13 @@ class VeteransTableSeeder extends Seeder
             $name = $faker->name;
             $description = $faker->text;
             factory(\App\Models\Veteran::class, 1)->create([
-                'name:uz'  =>  "$name uz lat",
-                'slug:uz'  =>  Str::slug($name. 'uz lat'),
-                'description:uz'  =>  "$description uz lat",
+                'name:uz'  =>  "$name uz",
+                'slug:uz'  =>  Str::slug($name. 'uz'),
+                'description:uz'  =>  "$description uz",
 
-                'name:oz'  =>  "$name uz kir",
-                'slug:oz'  =>  Str::slug($name. 'uz kir'),
-                'description:oz'  =>  "$description uz kir",
+                'name:oz'  =>  "$name oz",
+                'slug:oz'  =>  Str::slug($name. 'oz'),
+                'description:oz'  =>  "$description oz",
 
                 'name:ru'  =>  "$name ru",
                 'slug:ru'  =>  Str::slug($name. 'ru'),
