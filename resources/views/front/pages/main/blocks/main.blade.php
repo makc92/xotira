@@ -6,7 +6,7 @@
         <div class="slider-typography text-center">
             <div class="slider-text-middle-main sm-padding-15px-lr">
                 <div class="slider-text-middle text-center">
-                    <h1 class="text-white">Қатағон қурбонлари портали </h1>
+                    <h1 class="text-white">{{__('main.head-title')}}</h1>
                 </div>
             </div>
         </div>

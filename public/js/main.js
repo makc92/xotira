@@ -12145,3 +12145,31 @@ $(document).on("load", function () {
 
   fullScreenHeight();
 });
+
+$('html').click(function () {
+    $('#specialcontent').hide();
+});
+
+$('#specialcontainer').click(function (event) {
+    event.stopPropagation();
+});
+
+$('#menutoggle').click(function (event) {
+    $('#specialcontent').toggle();
+});
+
+$('.filter[data-filter="black"]').click(function () {
+    var $color = $(this).attr('data-filter')
+    $('html').addClass($color);
+})
+$('.filter[data-filter="default"]').click(function () {
+    if ( $('html').hasClass('black')){
+        $('html').removeClass('black')
+    }
+
+    $('body').addClass($color);
+})
+$('#fontSize').change(function () {
+    let size = this.value;
+    $('html').css('fontSize', size + 'px' )
+})

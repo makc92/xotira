@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="{{asset('./css/libs.css')}}"/>
     <link rel="stylesheet" href="{{asset('./css/main.css')}}"/>
     @yield('page_styles')
+    {{--<script src="js/html5shiv.js"></script>--}}
     <!--[if IE]>
-    <script src="js/html5shiv.js"></script>
     <![endif]-->
 </head>
 
@@ -32,7 +32,25 @@
     <!-- topbar -->
     <div class="top-header-area bg-black padding-10px-tb">
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-end">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-6">
+                    <div id="specialcontainer">
+                        <a href="#" id="menutoggle" class="special-button"><i class="far fa-eye"></i> Специальные возможности</a>
+                        <div id="specialcontent">
+                            <div class="row no-gutters justify-content-between">
+                                <div class="col-6 text-center">
+                                    <span class="filter" data-filter="default">A</span>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <span class="filter" data-filter="black">A</span>
+                                </div>
+                                <div class="col-12">
+                                    <input type="range" min="16" max="30" value="0" id="fontSize"  />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-end">
                     @yield('page_lang')
                 </div>

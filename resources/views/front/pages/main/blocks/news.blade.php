@@ -1,5 +1,5 @@
 <!-- start News section -->
-<section class="" id="news">
+<section class="bg-light-gray" id="news">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">

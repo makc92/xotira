@@ -45,17 +45,18 @@ Table of contents
     Reset
 ====================================== */
 html {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    font-size: 16px;
     color: #6f6f6f;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+   /* line-height: 24px;*/
 }
 
 body,
@@ -107,7 +108,8 @@ input,
 textarea,
 select {
     border: 1px solid #d1d1d1;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 0.875rem;
     padding: 8px 15px;
     width: 100%;
     margin: 0 0 20px 0;
@@ -181,7 +183,7 @@ dl {
 }
 
 * {
-    transition-timing-function: ease-in-out;
+   /* transition-timing-function: ease-in-out;
     -ms-transition-timing-function: ease-in-out;
     -moz-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
@@ -190,7 +192,7 @@ dl {
     -ms-transition-duration: .2s;
     -moz-transition-duration: .2s;
     -webkit-transition-duration: .2s;
-    -o-transition-duration: .2s;
+    -o-transition-duration: .2s;*/
 }
 
 *:hover {
@@ -262,31 +264,37 @@ h6 {
 
 h1 {
     font-size: 70px;
+    /*font-size: 4em;*/
     line-height: 70px;
 }
 
 h2 {
-    font-size: 55px;
+   /* font-size: 55px;*/
+    font-size: 3.438rem;
     line-height: 60px
 }
 
 h3 {
-    font-size: 48px;
+    /*font-size: 48px;*/
+    font-size: 3rem;
     line-height: 54px
 }
 
 h4 {
-    font-size: 40px;
+    /*font-size: 40px;*/
+    font-size: 2.5rem;
     line-height: 46px
 }
 
 h5 {
-    font-size: 32px;
+   /* font-size: 32px;*/
+    font-size: 2rem;
     line-height: 40px
 }
 
 h6 {
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: 1.563rem;
     line-height: 30px
 }
 
@@ -302,7 +310,8 @@ h6 {
 }
 
 .text-medium {
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1rem;
     line-height: 23px
 }
 
@@ -1039,6 +1048,7 @@ a.text-very-light-gray-hover:hover {
 
 .bg-light-gray {
     background-color: #f7f7f7
+    /*background-color: #f0f2f7*/
 }
 
 .bg-very-light-gray {
@@ -1190,7 +1200,8 @@ label {
 .big-textarea,
 .big-select select {
     padding: 18px 25px;
-    font-size: 14px;
+   /* font-size: 14px;*/
+    font-size: 0.875rem;
     border-radius: 0;
 }
 
@@ -1791,7 +1802,8 @@ textarea.input-bg {
 }
 
 .btn.btn-medium {
-    font-size: 12px;
+    font-size: 0.75rem;
+    /*font-size: 12px;*/
     padding: 6px 25px 5px;
 }
 
@@ -9853,7 +9865,8 @@ header {
 }
 
 .header-with-topbar .top-header-area {
-    font-size: 11px;
+    font-size: 0.6875rem;
+    /*font-size: 11px;*/
     position: fixed;
     top: 0;
     z-index: 10005;
@@ -9863,6 +9876,9 @@ header {
     -moz-transition: ease-in-out 0.3s;
     -ms-transition: ease-in-out 0.3s;
     -o-transition: ease-in-out 0.3s;
+}
+.header-with-topbar .top-header-area a.text-link-white-2 {
+    font-size: 0.6875rem;
 }
 
 .sticky.header-with-topbar .top-header-area {
@@ -9924,7 +9940,8 @@ header nav .nav-header-container {
 
 header nav .navbar-nav>li>a {
     color: #232323;
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 0.75rem;
     font-weight: 800;
     /*margin: 0 20px;*/
     padding: 5px 0px 5px;
@@ -11864,8 +11881,10 @@ header.sticky nav.navbar.brand-center ul.nav>li>a {
 }
 
 .page-title-large h1 {
-    font-size: 46px;
-    line-height: 49px
+    /*font-size: 46px;*/
+    font-size: 2.5625rem;
+    line-height: 3.063rem
+   /* line-height: 49px*/
 }
 
 .page-title-extra-large h1 {
@@ -17832,7 +17851,8 @@ aside .latest-post li figure {
 }
 
 #memory .name {
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 0.75em;
 }
 
 #memory .description {
@@ -17884,13 +17904,13 @@ img.image-shadow {
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 26px 30px 11px 23px rgba(50,50,50,0);
 }
 .main-page section#news {
-    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left #f7f7f7;
 }
 .main-page section#photo {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left,  #f7f7f7;
 }
 .main-page section#virtual  {
-    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left #f7f7f7;
 }
 
 .main-page section#achievement {
@@ -17978,7 +17998,8 @@ h4.heading {
 textarea,
 select {
     border: 1px solid #b49a4a;
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 0.875rem;
     padding: 8px 15px;
     width: 100%;
     margin: 0 0 20px 0;
@@ -17992,6 +18013,97 @@ select {
 .front input::placeholder {
     color: #323232;
 }
+#social-share {
+    margin-top: 20px;
+}
+#social-share ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+#social-share li {
+    margin-right: 10px;
+}
+#social-share a {
+    font-size: 20px;
+}
+#social-share .fa-facebook-square {
+   color: #3b5998;
+}
+#social-share .fa-twitter {
+   color: #00aced;
+}
+#social-share .fa-telegram {
+   color:  #0088cc;
+}
+#social-share .fa-linkedin {
+   color: #007bb6;
+}
+#social-share .fa-whatsapp {
+   color: #43d854;
+}
+
+
+
+
+#specialcontent {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 240px;
+    padding: 8px 9px;
+    margin: 2px 0 0;
+    font-size: 16px;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+.special-button {
+    color: #fff;
+    font-size: 0.88rem;
+}
+.special-button:hover,
+.special-button:active,
+.special-button:focus
+{
+    color: #fff;
+}
+#specialcontainer {
+    position: relative;
+}
+#specialcontent  .filter {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    border: 1px solid;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+#specialcontent .filter[data-filter=default] {
+    background-color: #4776b3;
+}
+#specialcontent .filter[data-filter=black] {
+    background-color: #323232;
+}
+html.black {
+    max-height: 100vh;
+    overflow-y: auto;
+    filter: grayscale(100%) invert(100%);
+}
+html.black img
+{
+    filter: grayscale(100%) invert(100%);
+}
+
 /*#home {
     position: relative;
 }*/

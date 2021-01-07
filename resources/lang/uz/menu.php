@@ -20,6 +20,6 @@ return array (
   'publications' => 'Muzey nashrlari',
   'activity' => 'Muzey faoliyati',
   'services' => 'Xizmatlar',
-  'library' => 'Electron kutubxona',
+  'library' => 'Elektron kutubxona',
   'main' => 'Asosiy',
 );

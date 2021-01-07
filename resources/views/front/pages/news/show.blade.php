@@ -23,8 +23,31 @@
                 <div class="news-show">
                     {!! $news->translate(app()->getLocale())->content!!}
                 </div>
+                <div id="social-share">
+                    {!! Share::page(URL::current(), $news->translate(app()->getLocale())->title)
+                   ->facebook()
+                   ->twitter()
+                   ->telegram()
+                   ->linkedin('Extra linkedin summary can be passed here')
+                   ->whatsapp() !!}
+                </div>
+               {{-- <h1><a href="https://twitter.com/intent/tweet?text={{$news->translate(app()->getLocale())->title}}&url={{URL::current()}}">twitter</a></h1>
+                <h1> <a class="share-btn-vk" href="https://vk.com/share.php?url=[LINK]" target="_blank" onclick="return Share.me(this);">
+                        <div class="vk share-block">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </div>
+                    </a></h1>
+                <h1><a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl={{URL::current()}}&st.comments={{$news->translate(app()->getLocale())->title}}" class="social-ok" rel="nofollow" target="_blank">
+                     asdasd
+                    </a></h1>--}}
             </div>
         </div>
+
+
     </section>
+
     {{--<livewire:front.show-news />--}}
+@endsection
+@section('page_scripts')
+    <script src="{{ asset('js/share.js') }}"></script>
 @endsection

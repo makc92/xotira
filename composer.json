@@ -16,6 +16,7 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1",
         "jeroennoten/laravel-adminlte": "^3.5",
+        "jorenvanhocht/laravel-share": "^3.3",
         "kingofcode/laravel-uploadable": "^0.1.8",
         "laracasts/flash": "^3.2",
         "laravel/framework": "^7.0",

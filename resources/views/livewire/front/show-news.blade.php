@@ -19,6 +19,14 @@
                                 </a>
                             </div>
                         </div>
+                        {{--<div id="social-share">
+                            {!! Share::page(URL::current(), $news_item->translate(app()->getLocale())->title)
+                           ->facebook()
+                           ->twitter()
+                           ->telegram()
+                           ->linkedin('Extra linkedin summary can be passed here')
+                           ->whatsapp() !!}
+                        </div>--}}
                     </div>
                     <!-- end post item -->
                 @endforeach
