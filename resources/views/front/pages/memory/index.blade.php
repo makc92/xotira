@@ -6,11 +6,11 @@
     @livewireStyles
 @endsection
 @section('page_lang')
-    @foreach(config('app.languages') as $locale)
+    @foreach(config('app.languages_front') as $locale => $desc)
         <a href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}"
            class="text-link-white-2 line-height-normal"
            @if (app()->getLocale() === $locale) style="font-weight: bold; text-decoration: underline" @endif
-        >{{ strtoupper($locale) }}</a>
+        >{{ strtoupper($desc) }}</a>
         <div class="separator-line-verticle-extra-small bg-dark-gray display-inline-block margin-two-half-lr position-relative vertical-align-middle"></div>
     @endforeach
 @endsection

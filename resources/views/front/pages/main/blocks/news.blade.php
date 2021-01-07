@@ -1,10 +1,10 @@
 <!-- start News section -->
-<section class="wow fadeIn" id="news">
+<section class="" id="news">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
                 <div class="position-relative overflow-hidden w-100">
-                    <h4 class="alt-font text-dark margin-15px-bottom sm-margin-20px-bottom">{{__('menu.news')}}</h4>
+                    <h4 class="alt-font heading text-dark margin-15px-bottom sm-margin-20px-bottom">{{__('menu.news')}}</h4>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
             @endforeach
         </div>
         <div class="text-center">
-            <a href="{{route('news', app()->getLocale())}}" class="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top">Batafsil</a>
+            <a href="{{route('news', app()->getLocale())}}" class="btn btn-gold btn-medium text-extra-small btn-rounded margin-5px-top">{{__('buttons.more')}}</a>
         </div>
     </div>
 </section>

@@ -4,11 +4,11 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-end">
                 <div class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-end">
-                    @foreach(config('app.languages') as $locale)
+                    @foreach(config('app.languages_front') as $locale => $desc)
                     <a href="{{ route('main', $locale) }}"
                        class="text-link-white-2 line-height-normal"
                        @if (app()->getLocale() === $locale) style="font-weight: bold; text-decoration: underline" @endif
-                    >{{ strtoupper($locale) }}</a>
+                    >{{ strtoupper($desc) }}</a>
                     <div class="separator-line-verticle-extra-small bg-dark-gray display-inline-block margin-two-half-lr position-relative vertical-align-middle"></div>
                     @endforeach
                     {{--<a href="mailto:no-reply@domain.com" class="text-link-white-2 line-height-normal">no-reply@domain.com</a>--}}
@@ -17,7 +17,7 @@
         </div>
     </div>
     <nav class="navbar navbar-default bootsnav navbar-fixed-top header-light-transparent background-transparent nav-box-width navbar-expand-lg on no-full">
-        <div class="container-fluid nav-header-container">
+        <div class="container nav-header-container">
             <div class="col-auto col-lg accordion-menu">
                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
                         data-target="#navbar-collapse-toggle-1">

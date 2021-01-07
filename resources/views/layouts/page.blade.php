@@ -42,7 +42,7 @@
     <!-- end topbar -->
     <!-- start navigation -->
     <nav class="navbar navbar-default bootsnav navbar-top header-light-transparent background-transparent nav-box-width navbar-expand-lg">
-        <div class="container-fluid nav-header-container">
+        <div class="container nav-header-container">
             <div class="col-auto col-lg accordion-menu">
                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
                         data-target="#navbar-collapse-toggle-1">

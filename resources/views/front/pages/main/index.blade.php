@@ -20,12 +20,23 @@
     <!-- animation -->
     <link rel="stylesheet" href="{{asset('./css/libs.css')}}"/>
     <link rel="stylesheet" href="{{asset('./css/main.css')}}"/>
+    <link rel="stylesheet" href="{{asset('./css/pace.css')}}">
     <!--[if IE]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
 </head>
 
-<body>
+<body class="main-page">
+<div class="paceDiv">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+
 @include('front.pages.main.blocks.header')
 
 @include('front.pages.main.blocks.main')
@@ -47,7 +58,19 @@
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fas fa-arrow-up"></i></a>
 <!-- end scroll to top  -->
 <!-- javascript libraries -->
+<script type="text/javascript" src="{{asset('./js/pace.js')}}"></script>
 <script type="text/javascript" src="{{asset('./js/main.js')}}"></script>
+<script>
+    Pace.options.ajax = false;
+    Pace.on("start", function () {
+        $(".paceDiv").show();
+    });
+
+    Pace.on("done", function () {
+        $(".paceDiv").fadeOut(1000);
+    });
+
+</script>
 </body>
 
 </html>

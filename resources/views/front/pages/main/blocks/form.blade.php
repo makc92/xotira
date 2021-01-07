@@ -4,7 +4,7 @@
     <div class="opacity-extra-medium bg-black"></div>
     <div class="container position-relative">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-7 text-center sm-margin-40px-bottom">
+            <div class="col-12 col-lg-8 text-center sm-margin-40px-bottom">
                 <div class="position-relative overflow-hidden w-100">
                     <h4 class="alt-font text-white margin-15px-bottom sm-margin-20px-bottom">{{__('menu.info')}}</h4>
                 </div>
@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 col-md-10 text-center last-paragraph-no-margin">
                 <a class="btn btn-medium btn-white btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto"
-                   href="{{route('info', app()->getLocale())}}">Batafsil</a>
+                   href="{{route('info', app()->getLocale())}}">{{__('buttons.more')}}</a>
             </div>
         </div>
     </div>

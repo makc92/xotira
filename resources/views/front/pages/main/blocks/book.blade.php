@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 col-md-10 text-center last-paragraph-no-margin">
                 <a class="btn btn-medium btn-white btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto"
-                   href="{{route('memory', app()->getLocale())}}">Батафсил</a>
+                   href="{{route('memory', app()->getLocale())}}">{{__('buttons.more')}}</a>
             </div>
         </div>
     </div>

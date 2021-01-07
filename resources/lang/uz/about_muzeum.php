@@ -6,4 +6,5 @@ return array (
   'text-3' => 'Muzeyning qayta ta’mirlangan va kengaytirilgan binosi qo’sh gumbazli ekspozitsiya uchun mo’ljallangan 3 ta zaldan iborat. Binoning ekspozitsiya zallarining maydoni 960 m2 tashkil etadi. Ayvon qismi 640 m2, yer to’lasi 1568 m2.',
   'text-4' => 'Muzey yangilangan ekspozitsiyasi 10 ta bo’limdan iborat.',
   'title' => 'Muzey haqida',
+  'regional' => 'Hududiy Muzeylar',
 );

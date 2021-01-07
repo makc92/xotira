@@ -52,7 +52,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    font-size: 14px;
+    font-size: 16px;
     color: #6f6f6f;
     font-weight: 400;
     line-height: 24px;
@@ -339,7 +339,8 @@ h6 {
 
 .text-extra-dark-gray,
 .btn.text-extra-dark-gray {
-    color: #232323
+    /*color: #232323*/
+    color: #323232
 }
 
 .text-dark-gray,
@@ -1011,6 +1012,9 @@ a.text-very-light-gray-hover:hover {
 
 .bg-extra-dark-gray {
     background-color: #1c1c1c;
+}
+.bg-extra-dark-gold {
+    background-color: #3c2e06;
 }
 
 .bg-dark-gray {
@@ -2146,7 +2150,8 @@ textarea.input-bg {
 }
 
 .border-color-medium-dark-gray {
-    border-color: #363636 !important;
+   /* border-color: #363636 !important;*/
+    border-color: #fff !important;
 }
 
 .border-color-dark-gray {
@@ -8657,7 +8662,7 @@ a.likes-count span {
 }
 
 .social-icon-style-8 a:hover {
-    color: #ff214f;
+    color: #323232;
 }
 
 /* icon hover effect style 9 */
@@ -9461,7 +9466,7 @@ header nav.navbar a:not([href]):not([tabindex]):hover {
 /* header navigation color and logo */
 header nav.navbar .navbar-nav>li>a,
 nav.navbar.bootsnav ul.nav>li>a {
-    color: #232323;
+    color: #323232;
     cursor: pointer;
 }
 
@@ -9781,7 +9786,8 @@ header.header-appear nav.bootsnav.header-light-transparent .navbar-nav>li>a.acti
 header.header-appear nav.bootsnav.header-light .navbar-nav>li>a.active,
 header nav.navbar .navbar-nav>li>a.active,
 nav.navbar.bootsnav ul.nav>li>a.active {
-    color: rgba(0, 0, 0, 0.6)
+    /*color: rgba(0, 0, 0, 0.6)*/
+    color: #b49a4a;
 }
 
 header nav.navbar.white-link .navbar-nav>li>a.active,
@@ -10370,7 +10376,7 @@ header.header-appear nav.header-light-transparent.white-link .header-searchbar a
 
 header.header-appear nav.bootsnav.header-light-transparent .navbar-nav>li>a,
 header.header-appear nav.bootsnav.header-light .navbar-nav>li>a {
-    color: #232323;
+    color: #000;
 }
 
 header.header-appear nav.header-light-transparent .header-searchbar,
@@ -12959,6 +12965,8 @@ header.sticky nav.navbar.brand-center ul.nav>li>a {
     display: block;
     width: 100%;
     cursor: pointer;
+    height: 248px;
+    object-fit: cover;
 }
 
 .portfolio-grid .grid-item {
@@ -16371,7 +16379,7 @@ figure {
 }
 #library .blog-post.blog-post-style1 .blog-post-images img {
     width: 100%;
-    height: auto;
+    height: 370px;
     object-fit: cover;
 }
 
@@ -17841,4 +17849,172 @@ aside .latest-post li figure {
 
 footer a:active, footer a:hover {
     color: #fff;
+    text-decoration: underline;
 }
+.btn-gold {
+    background: #b49a4a;
+    color: #fff;
+    border-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn.btn-gold:focus, .btn.btn-gold:hover {
+    background: 0 0;
+   /* color: #232323;*/
+    color: #b49a4a;
+    border-color: #b49a4a;
+}
+.bg-gold {
+    background-color: #b49a4a;
+}
+#home h1 {
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 2px #FFFFFF;
+    border-radius: 6px;
+}
+.main-page section#achievement img,
+.main-page section#museum img,
+.main-page section#lib img,
+.main-page section#virtual img {
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 26px 30px 11px 23px rgba(50,50,50,0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 26px 30px 11px 23px rgba(50,50,50,0);
+}
+img.image-shadow {
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 26px 30px 11px 23px rgba(50,50,50,0);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 26px 30px 11px 23px rgba(50,50,50,0);
+}
+.main-page section#news {
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
+}
+.main-page section#photo {
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left,  #f7f7f7;
+}
+.main-page section#virtual  {
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
+}
+
+.main-page section#achievement {
+    background-image: url("../images/top-50.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.main-page section#lib {
+    background-image: url("../images/bottom-50.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+h4.heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #b49a4a;
+    margin: 10px auto;
+}
+h4.heading {
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+.front .pagination {
+    justify-content: center;
+}
+.front .page-item.active .page-link {
+    background-color: #b49a4a !important;
+    border-color: #b49a4a !important;
+    color: #fff !important;
+}
+.front .pagination .page-link {
+    color:#323232;
+}
+.front .page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #b49a4a;
+}
+.front section#museum,
+.front section#regional,
+.front section#info,
+.front section#photo
+{
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
+}
+
+
+.front section#achievements,
+.front section#library,
+.front section#virtual,
+.front section#news
+{
+    background-image: url("../images/top-50.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.scroll-top-arrow, .scroll-top-arrow:focus {
+    width: 50px;
+    height: 50px;
+    background: #b49a4a;
+    font-weight: 700;
+    line-height: 50px;
+    border-radius: 25%;
+    box-shadow: 0 0 7px black;
+}
+.scroll-top-arrow i {
+    line-height: 50px;
+}
+
+.main-page #achievement::after,
+.main-page #museum::after{
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #b49a4a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.front input,
+textarea,
+select {
+    border: 1px solid #b49a4a;
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+    resize: none;
+    color: inherit;
+}
+.front .custom-file-label {
+    border: 1px solid #b49a4a;
+}
+.front input::placeholder {
+    color: #323232;
+}
+/*#home {
+    position: relative;
+}*/
+/*#home h1 {
+    overflow: hidden;
+}
+#home h1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../images/main.jpg") center;
+    background-size: cover;
+
+}*/
+/*
+section#news,
+section#achievement,
+section#museum
+{
+    background: url("../images/bg.png");
+}
+*/

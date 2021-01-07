@@ -6,4 +6,5 @@ return array (
   'text-3' => 'According to the suggestions and comments of Shavkat Mirziyoyev, the President of the Republic of Uzbekistan, during his visit on August 31, 2017 on the occasion of memory of the victims of the repressions, Decree of the Cabinet of Ministers of the Republic of Uzbekistan “About measures on establishment of State museum “Memory of the Victims of the Repressions” under the Cabinet of Ministers of the Republic of Uzbekistan and regional museums “Memory of the Victims of the Repressions” under Higher Educational Establishments” #936 dated November 22, 2017 was issued.',
   'text-4' => 'In accordance to this Decree the museum was transferred to the Cabinet of Ministers of the Republic of Uzbekistan, its activity was more expanded and improved.',
   'title' => 'About museum',
+  'regional' => 'Regional museums',
 );

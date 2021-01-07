@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-5">
                 <div class="col-12 mb-2 text-center">
                     <div wire:loading.delay>
                         <img src="{{asset('images/wait.gif')}}" alt="">
@@ -23,7 +23,7 @@
                     @foreach($veterans as $veteran)
                         <div class="col-10 col-xl-3 col-lg-4 col-md-6 sm-margin-30px-bottom text-center">
                             <div class="feature-box-16 sm-width-100 mb-3">
-                                <img src="{{asset('images/placeholder.jpg')}}" alt="">
+                                <img src="{{$veteran->thumbnail ? $veteran->getImagePath('thumbnail', 'medium') : asset('images/placeholder.jpg')}}" alt="">
                                 <div class="feature-box-content text-center">
                                     <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                     <div class="d-table h-100 w-100 position-relative">

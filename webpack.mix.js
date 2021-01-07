@@ -61,6 +61,8 @@ mix.copy('resources/assets/fonts', 'public/fonts');
 mix.copy('resources/assets/js/jquery.vmap.js', 'public/js/jquery.vmap.js');
 mix.copy('resources/assets/js/vmap.uzbekistan.js', 'public/js/vmap.uzbekistan.js');
 mix.copy('resources/assets/css/jqvmap.css', 'public/css/jqvmap.css');
+mix.copy('resources/assets/css/pace.css', 'public/css/pace.css');
+mix.copy('resources/assets/js/pace.js', 'public/js/pace.js');
 
 
 if (mix.inProduction()) {

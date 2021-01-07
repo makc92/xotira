@@ -84,6 +84,8 @@ return [
 
     'languages' => ['uz','oz','ru','en' ],
 
+    'languages_front' => ['uz'=>'o`z','oz'=>'уз','ru' => 'ru','en' =>'en' ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale

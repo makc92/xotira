@@ -1,10 +1,10 @@
 <!-- start gallery section -->
-<section class="wow fadeIn" id="photo">
+<section class="" id="photo">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
                 <div class="position-relative overflow-hidden w-100">
-                    <h4 class="alt-font text-dark margin-15px-bottom sm-margin-20px-bottom">{{__('menu.photo')}}</h4>
+                    <h4 class="alt-font heading text-dark margin-15px-bottom sm-margin-20px-bottom">{{__('menu.photo')}}</h4>
                 </div>
             </div>
         </div>
@@ -15,7 +15,7 @@
                     <!-- start portfolio item -->
                     @foreach($photos as $photo)
                     <li class="grid-item web branding design wow fadeInUp">
-                        <a href="{{$photo->thumbnail ? $photo->getImagePath('thumbnail', 'medium') : asset('images/photo.jpg')}}" title="Lightbox gallery image title...">
+                        <a href="{{$photo->thumbnail ? $photo->getImagePath('thumbnail', 'medium') : asset('images/photo.jpg')}}">
                             <figure>
                                 <div class="portfolio-img bg-extra-dark-gray"><img src="{{$photo->thumbnail ? $photo->getImagePath('thumbnail', 'medium') : asset('images/photo.jpg')}}" alt=""
                                                                                    class="project-img-gallery"/></div>
@@ -36,8 +36,8 @@
         </div>
         <div class="row justify-content-center mt-5">
             <div class="col-12 col-lg-6 col-md-10 text-center last-paragraph-no-margin">
-                <a class="btn btn-medium btn-dark-gray btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto"
-                   href="{{route('photos', app()->getLocale())}}">Батафсил</a>
+                <a class="btn btn-medium btn-gold btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto"
+                   href="{{route('photos', app()->getLocale())}}">{{__('buttons.more')}}</a>
             </div>
         </div>
     </div>

@@ -7,12 +7,13 @@
                     <div class="blog-post blog-post-style1 text-center text-md-left">
                         <div class="blog-post-images overflow-hidden margin-25px-bottom md-margin-20px-bottom">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('images/elbook.jpg')}}" alt="">
+                                <img src="{{$book->thumbnail ? $book->getImagePath('thumbnail', 'medium') : asset('images/elbook.jpg')}}"
+                                     class="text-center">
                             </a>
                         </div>
                         <div class="post-details text-center">
                             <p class="mb-3"> {{Str::limit($book->description[app()->getLocale()], 50)}}</p>
-                            <a class="btn btn-very-small btn-dark-gray btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto" href="javascript:void(0);">ko`chrib olish</a>
+                            <a class="btn btn-very-small btn-gold btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto" href="javascript:void(0);">{{__('buttons.download_book')}}</a>
                         </div>
 
                     </div>

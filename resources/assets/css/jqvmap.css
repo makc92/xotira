@@ -10,7 +10,7 @@
 	font-family: sans-serif, Verdana;
 	font-size: smaller;
 	padding: 3px;
-  pointer-events:none;
+    pointer-events:none;
 }
 .jqvmap-pin {
   pointer-events:none;
