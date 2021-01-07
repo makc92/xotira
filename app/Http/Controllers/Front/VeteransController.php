@@ -9,10 +9,7 @@ use Illuminate\Http\Request;
 
 class VeteransController extends Controller
 {
-    /**
-     * @var VeteranService
-     */
-    private VeteranService $veteranService;
+    private $veteranService;
 
     public function __construct(VeteranService $veteranService)
     {
