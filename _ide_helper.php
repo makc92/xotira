@@ -14302,6 +14302,137 @@
      
 }
 
+    namespace Jorenvh\Share { 
+            /**
+     * 
+     *
+     */ 
+        class ShareFacade {
+                    /**
+         * 
+         *
+         * @param $url
+         * @param null $title
+         * @param array $options
+         * @param null $prefix
+         * @param null $suffix
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function page($url, $title = null, $options = [], $prefix = null, $suffix = null)
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->page($url, $title, $options, $prefix, $suffix);
+        }
+                    /**
+         * 
+         *
+         * @param null $title
+         * @param array $options
+         * @param null $prefix
+         * @param null $suffix
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function currentPage($title = null, $options = [], $prefix = null, $suffix = null)
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->currentPage($title, $options, $prefix, $suffix);
+        }
+                    /**
+         * Facebook share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function facebook()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->facebook();
+        }
+                    /**
+         * Twitter share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function twitter()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->twitter();
+        }
+                    /**
+         * Reddit share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function reddit()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->reddit();
+        }
+                    /**
+         * Telegram share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function telegram()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->telegram();
+        }
+                    /**
+         * Whatsapp share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function whatsapp()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->whatsapp();
+        }
+                    /**
+         * Linked in share link
+         *
+         * @param string $summary
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function linkedin($summary = '')
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->linkedin($summary);
+        }
+                    /**
+         * Pinterest share link
+         *
+         * @return \Jorenvh\Share\Share 
+         * @static 
+         */ 
+        public static function pinterest()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->pinterest();
+        }
+                    /**
+         * Get the raw generated links.
+         *
+         * @return string|array 
+         * @static 
+         */ 
+        public static function getRawLinks()
+        {
+                        /** @var \Jorenvh\Share\Share $instance */
+                        return $instance->getRawLinks();
+        }
+         
+    }
+     
+}
+
     namespace Barryvdh\Debugbar { 
             /**
      * 
@@ -16564,40 +16695,6 @@
      
 }
 
-    namespace Illuminate\Testing { 
-            /**
-     * 
-     *
-     * @mixin \Illuminate\Http\Response
-     */ 
-        class TestResponse {
-                    /**
-         * 
-         *
-         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
-         * @param mixed $component
-         * @static 
-         */ 
-        public static function assertSeeLivewire($component)
-        {
-                        return \Illuminate\Testing\TestResponse::assertSeeLivewire($component);
-        }
-                    /**
-         * 
-         *
-         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
-         * @param mixed $component
-         * @static 
-         */ 
-        public static function assertDontSeeLivewire($component)
-        {
-                        return \Illuminate\Testing\TestResponse::assertDontSeeLivewire($component);
-        }
-         
-    }
-     
-}
-
     namespace Illuminate\Routing { 
             /**
      * 
@@ -16645,6 +16742,40 @@
         public static function emailVerification()
         {
                         return \Illuminate\Routing\Router::emailVerification();
+        }
+         
+    }
+     
+}
+
+    namespace Illuminate\Testing { 
+            /**
+     * 
+     *
+     * @mixin \Illuminate\Http\Response
+     */ 
+        class TestResponse {
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestResponse::assertSeeLivewire($component);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertDontSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestResponse::assertDontSeeLivewire($component);
         }
          
     }
@@ -19702,6 +19833,7 @@ namespace  {
             class View extends \Illuminate\Support\Facades\View {}
             class Image extends \Intervention\Image\Facades\Image {}
             class Captcha extends \Mews\Captcha\Facades\Captcha {}
+            class Share extends \Jorenvh\Share\ShareFacade {}
             class Debugbar extends \Barryvdh\Debugbar\Facade {}
             class Flare extends \Facade\Ignition\Facades\Flare {}
             class Flash extends \Laracasts\Flash\Flash {}

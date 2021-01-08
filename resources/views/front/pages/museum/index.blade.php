@@ -31,6 +31,8 @@
     @include('front.pages.museum.blocks.about')
     @include('front.pages.museum.blocks.region')
     @include('front.pages.museum.blocks.exposition')
+    @include('front.pages.museum.blocks.teams')
+    @include('front.pages.museum.blocks.services')
 @endsection
 
 @section('page_scripts')

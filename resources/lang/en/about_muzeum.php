@@ -7,4 +7,5 @@ return array (
   'text-4' => 'In accordance to this Decree the museum was transferred to the Cabinet of Ministers of the Republic of Uzbekistan, its activity was more expanded and improved.',
   'title' => 'About museum',
   'regional' => 'Regional museums',
+  'teams' => 'Administration',
 );

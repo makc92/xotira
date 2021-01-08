@@ -32,7 +32,8 @@ Route::group([
     Route::get('/info', 'Front\InfoController@index')->name('info');
     Route::post('/info/sendForm', 'Front\InfoController@store')->name('info.send');
     Route::get('/photos', 'Front\PhotosController')->name('photos');
-    Route::view('/museum', 'front.pages.museum.index')->name('museum.main');
+    Route::get('/museum', 'Front\MuseumController@index')->name('museum.main');
+    Route::get('/museum/administration/{slug}', 'Front\MuseumController@showTeamMember')->name('museum.teams.show');
     Route::view('/museum/exposition', 'front.pages.museum.exposition')->name('museum.exposition');
     Route::get('/refreshCaptcha', 'Front\RefreshCaptchaController')->name('captcha.refresh');
 });
@@ -60,6 +61,7 @@ Route::group(
         Route::resource('achievements', 'AchievementsController');
         Route::resource('applications', 'ApplicationsController');
         Route::resource('photos', 'PhotosController');
+        Route::resource('teams', 'TeamsController');
         Route::get('clear', 'ClearController');
     }
 );

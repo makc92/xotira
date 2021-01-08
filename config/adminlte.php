@@ -234,7 +234,7 @@ return [
         [
             'text' => 'Сайт',
             'url'  => '/',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-globe',
         ],
         [
             'text' => 'Пользователи',
@@ -270,6 +270,11 @@ return [
             'text' => 'Фотогаллереая',
             'url'  => 'admin/photos',
             'icon' => 'fas fa-images',
+        ],
+        [
+            'text' => 'Администрация',
+            'url'  => 'admin/teams',
+            'icon' => 'fas fa-users',
         ],
     ],
 

@@ -14,7 +14,7 @@ class ShowLibrary extends Component
     public function render()
     {
         $bookService = resolve(BooksService::class);
-        return view('livewire.front.show-library',[
+        return view('livewire.front.show-library', [
             'books' => $bookService->pagenateBooks(8)
         ]);
     }

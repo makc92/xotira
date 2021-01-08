@@ -7,4 +7,5 @@ return array (
   'text-4' => 'Muzey yangilangan ekspozitsiyasi 10 ta bo’limdan iborat.',
   'title' => 'Muzey haqida',
   'regional' => 'Hududiy Muzeylar',
+  'teams' => 'Rahbariyat',
 );

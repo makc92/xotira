@@ -14,7 +14,7 @@ class VeteransTableSeeder extends Seeder
         DB::table('veterans')->delete();
         DB::table('veteran_translations')->delete();
 
-        for ($i = 1; $i <= 5000; $i++) {
+        for ($i = 1; $i <= 100; $i++) {
             $faker = Faker\Factory::create();
             $name = $faker->name;
             $description = $faker->text;

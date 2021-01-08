@@ -16185,7 +16185,7 @@ figure {
     color: #575757;
     line-height: 44px;
     margin: 0 !important;
-    padding: 0 25px;
+    padding: 0 5px;
     border-radius: 0;
 }
 
@@ -17953,7 +17953,8 @@ h4.heading {
 .front section#museum,
 .front section#regional,
 .front section#info,
-.front section#photo
+.front section#photo,
+.front section#teams
 {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
 }
@@ -18102,6 +18103,12 @@ html.black {
 html.black img
 {
     filter: grayscale(100%) invert(100%);
+}
+
+.front .team-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /*#home {

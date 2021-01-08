@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-12 text-center justify-content-center">
             @foreach($regionList as $key => $value)
-                <a class="btn btn-very-small
+                <a class="btn btn-small
     btn-gold btn-rounded
     d-lg-inline-block" style="margin: 10px"
                    href="{{route('memory.regions', [app()->getLocale(), $value])}}">{{__('regions.' . $value)}}</a>
