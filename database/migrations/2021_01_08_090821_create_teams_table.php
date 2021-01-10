@@ -35,7 +35,7 @@ class CreateTeamsTable extends Migration
             $table->string('slug');
             $table->string('position');
             $table->longText('bio');
-            $table->longText('days');
+            $table->longText('days')->nullable();
             $table->longText('activity');
         });
     }

@@ -52,7 +52,7 @@
                                 {{Form::textarea('uz_bio', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('uz_days', 'Дни приёма (*)')}}
+                                {{Form::label('uz_days', 'Дни приёма')}}
                                 {{Form::textarea('uz_days', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -75,7 +75,7 @@
                                 {{Form::textarea('oz_bio', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('oz_days', 'Дни приёма (*)')}}
+                                {{Form::label('oz_days', 'Дни приёма')}}
                                 {{Form::textarea('oz_days', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -98,7 +98,7 @@
                                 {{Form::textarea('ru_bio', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('ru_days', 'Дни приёма (*)')}}
+                                {{Form::label('ru_days', 'Дни приёма')}}
                                 {{Form::textarea('ru_days', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -121,7 +121,7 @@
                                 {{Form::textarea('en_bio', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('en_days', 'Дни приёма (*)')}}
+                                {{Form::label('en_days', 'Дни приёма')}}
                                 {{Form::textarea('en_days', null, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -149,7 +149,7 @@
                         {{Form::label('order', 'Очередь (*)')}}
                         {{Form::number('order', null, $attributes = ['class' => 'form-control'])}}
                     </div>
-                    <button type="submit" class="btn btn-success"><i class="fas fa-plus-square"></i> Create News</button>
+                    <button type="submit" class="btn btn-success"><i class="fas fa-plus-square"></i> Добавить</button>
                 </div>
             </div>
         </div>

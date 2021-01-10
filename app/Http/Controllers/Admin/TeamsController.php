@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Teams\StoreTeamRequest;
+use App\Http\Requests\Teams\UpdateTeamRequest;
 use App\Models\Team;
 use App\Services\Teams\TeamService;
 use Illuminate\Http\Request;
@@ -29,7 +31,7 @@ class TeamsController extends Controller
         return view('admin.teams.create');
     }
 
-    public function store(Request $request)
+    public function store(StoreTeamRequest $request)
     {
         $this->teamService->createTeamMember($request->all());
         flash('Администратор добавлен')->success();
@@ -45,7 +47,7 @@ class TeamsController extends Controller
         return view('admin.teams.edit', compact(['team']));
     }
 
-    public function update(Request $request, Team $team)
+    public function update(UpdateTeamRequest $request, Team $team)
     {
         $this->teamService->updateTeamMember($team, $request->all());
         flash('Администратор обновлен')->success();

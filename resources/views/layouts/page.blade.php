@@ -35,7 +35,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-6">
                     <div id="specialcontainer">
-                        <a href="#" id="menutoggle" class="special-button"><i class="far fa-eye"></i>{{__('buttons.special')}}</a>
+                        <a href="#" id="menutoggle" class="special-button"><i class="far fa-eye"></i> {{__('buttons.special')}}</a>
                         <div id="specialcontent">
                             <div class="row no-gutters justify-content-between">
                                 <div class="col-6 text-center">

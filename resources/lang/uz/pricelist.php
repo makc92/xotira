@@ -11,4 +11,18 @@ return array (
 yuritayotgan xorijiy shaxslar',
   'tickets-4' => 'MDH davlatlari fuqarolari',
   'tickets-5' => 'Chet ellik mehmonlar',
+  'guide-1' => 'Maktab, litsey va kollej o‘quvchilari',
+  'guide-2' => 'Oliy o‘quv yurtlari talabalari',
+  'guide-3' => 'O’zbekiston fuqarolari',
+  'guide-4' => 'MDH davlatlari fuqarolari va chet ellik mehmonlar',
+  'photo-1' => 'Eksponatlarni videokamerada suratga tushirish',
+  'photo-2' => 'Eksponatlarni rasmga olish',
+  'photo-3' => 'Syomka, TV, kinostudiya tomonidan 
+syomka qilish (1 soat)',
+  'free-1' => 'Maktabgacha yoshdagilar (7 yoshdan kichik)',
+  'free-2' => 'Nafaqadagilar (hujjat asosida)',
+  'free-3' => 'Urush qatnashchilari (hujjat asosida)',
+  'free-4' => 'Mehribonlik uylari tarbiyalanuvchilari (murojaat xati asosida)',
+  'free-5' => 'Nogironlar (hujjat asosida)',
+  'free-6' => 'Kam ta’minlangan oilalar (murojaat xati asosida)',
 );

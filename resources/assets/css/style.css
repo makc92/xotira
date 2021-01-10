@@ -17954,7 +17954,8 @@ h4.heading {
 .front section#regional,
 .front section#info,
 .front section#photo,
-.front section#teams
+.front section#teams,
+.front section#services
 {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
 }
@@ -18067,7 +18068,7 @@ select {
 }
 .special-button {
     color: #fff;
-    font-size: 0.88rem;
+    font-size: 0.79rem;
 }
 .special-button:hover,
 .special-button:active,

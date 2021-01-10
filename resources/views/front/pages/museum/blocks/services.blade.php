@@ -1,4 +1,4 @@
-<section class="wow fadeIn">
+<section class="wow fadeIn" id="services">
     <div class="container tab-style2">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
@@ -33,17 +33,27 @@
                             <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
+                                <td>{{__('pricelist.tickets-1')}}</td>
+                                <td>2000</td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
+                                <td>{{__('pricelist.tickets-2')}}</td>
+                                <td>3000</td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
-                                <td>Thornton</td>
+                                <td>{{__('pricelist.tickets-3')}}</td>
+                                <td>5000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>{{__('pricelist.tickets-4')}}</td>
+                                <td>12000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>{{__('pricelist.tickets-5')}}</td>
                                 <td>Thornton</td>
                             </tr>
                             </tbody>
@@ -55,14 +65,38 @@
             <!-- start tab content -->
             <div class="tab-pane fade in" id="tab_sec2">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6 sm-margin-30px-bottom">
-                        <img src="http://placehold.it/1232x816" alt="" class="w-100"/>
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
-                        <h6 class="alt-font font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase">Development</h6>
-                        <span class="text-extra-large text-extra-dark-gray margin-20px-bottom d-block">We use different types of massage for a variety of health related benefits purposes.</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0);" class="btn btn-small btn-rounded btn-dark-gray">Explore services</a>
+                    <div class="col-12">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">{{__('pricelist.service-name')}}</th>
+                                <th scope="col">{{__('pricelist.price')}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>{{__('pricelist.guide-1')}}</td>
+                                <td>5000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>{{__('pricelist.guide-2')}}</td>
+                                <td>7000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>{{__('pricelist.guide-3')}}</td>
+                                <td>8000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>{{__('pricelist.guide-4')}}</td>
+                                <td>20000</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -70,14 +104,33 @@
             <!-- start tab content -->
             <div class="tab-pane fade in" id="tab_sec3">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6 sm-margin-30px-bottom">
-                        <img src="http://placehold.it/1232x816" alt="" class="width-100"/>
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
-                        <h6 class="alt-font font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase">Branding</h6>
-                        <span class="text-extra-large text-extra-dark-gray margin-20px-bottom d-block">We use different types of massage for a variety of health related benefits purposes.</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0);" class="btn btn-small btn-rounded btn-dark-gray">Explore services</a>
+                    <div class="col-12">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">{{__('pricelist.service-name')}}</th>
+                                <th scope="col">{{__('pricelist.price')}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>{{__('pricelist.photo-1')}}</td>
+                                <td>40000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>{{__('pricelist.photo-2')}}</td>
+                                <td>30000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>{{__('pricelist.photo-3')}}</td>
+                                <td>20000</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -85,14 +138,41 @@
             <!-- start tab content -->
             <div class="tab-pane fade in" id="tab_sec4">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6 sm-margin-30px-bottom">
-                        <img src="http://placehold.it/1232x816" alt=""/>
-                    </div>
-                    <div class="col-12 col-lg-5 col-md-6 offset-lg-1">
-                        <h6 class="alt-font font-weight-700 text-extra-dark-gray margin-20px-bottom text-uppercase">Brainstorming</h6>
-                        <span class="text-extra-large text-extra-dark-gray margin-20px-bottom d-block">We use different types of massage for a variety of health related benefits purposes.</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="javascript:void(0);" class="btn btn-small btn-rounded btn-dark-gray">Explore services</a>
+                    <div class="col-12">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">{{__('pricelist.service-name')}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>{{__('pricelist.free-1')}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>{{__('pricelist.free-2')}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>{{__('pricelist.free-3')}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>{{__('pricelist.free-4')}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>{{__('pricelist.free-5')}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>{{__('pricelist.free-6')}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

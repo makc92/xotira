@@ -53,7 +53,7 @@
                                 {{Form::textarea('uz_bio', $team->translate('uz')->bio, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('uz_days', 'Дни приёма (*)')}}
+                                {{Form::label('uz_days', 'Дни приёма')}}
                                 {{Form::textarea('uz_days', $team->translate('uz')->days, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -76,7 +76,7 @@
                                 {{Form::textarea('oz_bio', $team->translate('oz')->bio, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('oz_days', 'Дни приёма (*)')}}
+                                {{Form::label('oz_days', 'Дни приёма')}}
                                 {{Form::textarea('oz_days', $team->translate('oz')->days, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -99,7 +99,7 @@
                                 {{Form::textarea('ru_bio', $team->translate('ru')->bio, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('ru_days', 'Дни приёма (*)')}}
+                                {{Form::label('ru_days', 'Дни приёма')}}
                                 {{Form::textarea('ru_days', $team->translate('ru')->days, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
@@ -122,7 +122,7 @@
                                 {{Form::textarea('en_bio', $team->translate('en')->bio, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
-                                {{Form::label('en_days', 'Дни приёма (*)')}}
+                                {{Form::label('en_days', 'Дни приёма')}}
                                 {{Form::textarea('en_days', $team->translate('en')->days, $attributes = ['class' => 'form-control'])}}
                             </div>
                             <div class="form-group">
