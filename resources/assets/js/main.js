@@ -1837,13 +1837,13 @@ $(document).ready(function () {
     }
   });
 
-  $("input.search-input").on("keyup", function (event) {
+ /* $("input.search-input").on("keyup", function (event) {
     if ($(this).val() == null || $(this).val() == "") {
       $(this).css({ border: "none", "border-bottom": "2px solid red" });
     } else {
       $(this).css({ border: "none", "border-bottom": "2px solid rgba(255,255,255,0.5)" });
     }
-  });
+  });*/
 
   $("form.search-form, form.search-form-result").submit(function (event) {
     var error = validationSearchForm();

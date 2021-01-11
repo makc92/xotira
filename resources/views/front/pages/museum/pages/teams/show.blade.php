@@ -43,10 +43,12 @@
                     <h6 style="color:#323232">{{ $team->translate(app()->getLocale())->position }}</h6>
                     <p>{!! $team->translate(app()->getLocale())->bio !!} </p>
                 </div>
+                @if($team->days)
                 <div class="col-12 mt-5">
                     <h6 style="color:#323232">{{__('teams.days')}}: </h6>
                     <p class="">{!! $team->translate(app()->getLocale())->days !!}</p>
                 </div>
+                @endif
                 <div class="col-12 mt-5">
                     <h6 style="color:#323232">{{__('teams.activity')}} :</h6>
                     <p class="">{!! $team->translate(app()->getLocale())->activity !!}</p>

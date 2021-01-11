@@ -13,7 +13,7 @@ class TeamsTableSeeder extends Seeder
     {
         DB::table('teams')->delete();
         DB::table('team_translations')->delete();
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 4; $i++) {
             $faker = Faker\Factory::create();
             $name = $faker->name;
             factory(\App\Models\Team::class, 1)->create([

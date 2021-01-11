@@ -22,6 +22,13 @@ class NewsRepository
     {
         return News::withTranslation()->whereTranslationLike('title', '%' . $text . '%')->orderBy('id', 'desc')->paginate(10);
     }
+    public function searchByTitleOrByContent($text)
+    {
+        return News::withTranslation()
+            ->whereTranslationLike('title', '%' . $text . '%')
+            ->orWhereTranslationLike('content', '%' . $text . '%')
+            ->orderBy('id', 'desc')->paginate(10);
+    }
     public function createFromArray(array $data)
     {
         return News::create($data);

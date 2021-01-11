@@ -8,10 +8,10 @@ class ClearController extends Controller
 {
     public function __invoke(Request $request)
     {
-        \Artisan::call('route:cache');
+        \Artisan::call('route:clear');
         \Artisan::call('config:clear');
         \Artisan::call('cache:clear');
-        \Artisan::call('view:cache');
+        \Artisan::call('view:clear');
         flash('Сache cleared');
         return redirect()->route('admin.dashboard');
     }

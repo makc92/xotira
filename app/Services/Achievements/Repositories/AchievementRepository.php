@@ -17,6 +17,15 @@ class AchievementRepository
         return Achievement::withTranslation()->whereTranslationLike('title', '%' . $text . '%')->orderBy('id', 'desc')->paginate(10);
     }
 
+    public function searchByTitleOrContent($text)
+    {
+        return Achievement::withTranslation()
+            ->whereTranslationLike('title', '%' . $text . '%')
+            ->orWhereTranslationLike('content', '%' . $text . '%')
+            ->orderBy('id', 'desc')
+            ->paginate(10);
+    }
+
     /**
      * @param $data
      * @return mixed

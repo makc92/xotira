@@ -27,7 +27,7 @@
                     @foreach($veterans as $veteran)
                         <div class="col-12 col-md-3 sm-margin-30px-bottom text-center">
                             <div class="feature-box-16 sm-width-100">
-                                <img src="{{asset('images/placeholder.jpg')}}" alt="">
+                                <img src="{{$veteran->thumbnail ? $veteran->getImagePath('thumbnail', 'medium') : asset('images/placeholder.jpg')}}" alt="">
                                 <div class="feature-box-content text-center">
                                     <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                     <div class="d-table h-100 w-100 position-relative">

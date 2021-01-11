@@ -13,7 +13,7 @@
                         </div>
                         <div class="post-details text-center">
                             <p class="mb-3"> {{Str::limit($book->description[app()->getLocale()], 50)}}</p>
-                            <a class="btn btn-very-small btn-gold btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto" href="javascript:void(0);">{{__('buttons.download_book')}}</a>
+                            <a class="btn btn-small btn-gold btn-rounded lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto" target="_blank" href="{{$book->getFilePath('book')}}">{{__('buttons.download_book')}}</a>
                         </div>
 
                     </div>

@@ -8,4 +8,5 @@ return array (
   'photo' => 'Fayl biriktirish',
   'document' => 'Fayl biriktirish',
   'send' => 'Yuborish',
+  'search-text' => 'Matnni kiriting',
 );

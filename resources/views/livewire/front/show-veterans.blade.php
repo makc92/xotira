@@ -5,7 +5,7 @@
                 <div class="col-12 text-center margin-20px-bottom sm-margin-20px-bottom">
                     <div class="position-relative overflow-hidden w-100">
                         <form action="">
-                            <input type="text" name="name" id="name" placeholder="Qidiruv" class="big-input"
+                            <input type="text" name="name" id="name" placeholder="{{__('form.search-text')}}" class="big-input"
                                    wire:model="searchVeteran">
 
                         </form>

@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
     <meta name="author" content="ITPark">
     <!-- description -->
-    <meta name="description" content="Қатағон қурбонлари портали">
+    <meta name="description" content="{{__('main.head-title')}}">
     <!-- keywords -->
-    <meta name="keywords" content="Қатағон қурбонлари портали">
+    <meta name="keywords" content="{{__('main.head-title')}}">
     <!-- favicon -->
 {{-- <link rel="shortcut icon" href="images/favicon.png">
  <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -32,10 +32,10 @@
     <!-- topbar -->
     <div class="top-header-area bg-black padding-10px-tb">
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-6">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 d-flex align-items-center  justify-content-center justify-content-md-start">
                     <div id="specialcontainer">
-                        <a href="#" id="menutoggle" class="special-button"><i class="far fa-eye"></i> {{__('buttons.special')}}</a>
+                        <a href="#" id="menutoggle" class="special-button"><i class="far fa-eye"></i> <span class="sm-display-none">{{__('buttons.special')}}</span> </a>
                         <div id="specialcontent">
                             <div class="row no-gutters justify-content-between">
                                 <div class="col-6 text-center">
@@ -49,6 +49,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="header-searchbar">
+                        <a href="#search-header" class="header-search-form"><i class="fas fa-search search-button"></i></a>
+                        <!-- search input-->
+                        <form id="search-header" method="post" action="{{route('search', app()->getLocale())}}" name="search-header" class="mfp-hide search-form-result">
+                            <div class="search-block d-flex">
+                                <div class="w-100 d-flex">
+                                    <input class="search-input" type="text" name="q" placeholder="{{__('form.search-text')}}" value="">
+                                    <select name="model" id="model" class="w-30 search-select">
+                                        <option value="news">{{__('menu.news')}}</option>
+                                        <option value="achievement">{{__('menu.achievement')}}</option>
+                                        <option value="memory">{{__('menu.memory')}}</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary searchBtn-v" type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-6 text-uppercase alt-font d-flex align-items-center justify-content-center justify-content-md-end">

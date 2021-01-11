@@ -9716,6 +9716,9 @@ nav.navbar.bootsnav ul.nav>li>a:hover,
 .header-social-icon a:hover {
     color: rgba(0, 0, 0, 0.6)
 }
+.header-search-form:hover {
+    color: #fff;
+}
 
 header nav.navbar.white-link .navbar-nav>li>a:hover,
 nav.navbar.bootsnav.white-link ul.nav>li>a:hover,
@@ -14151,7 +14154,7 @@ header.sticky nav.navbar.brand-center ul.nav>li>a {
 }
 
 .header-search-form {
-    color: #232323
+    color: #fff
 }
 
 .search-form .search-input {
@@ -17942,8 +17945,17 @@ h4.heading {
     border-color: #b49a4a !important;
     color: #fff !important;
 }
-.front .pagination .page-link {
-    color:#323232;
+.front .pagination a.page-link,
+.front .pagination button.page-link
+{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #323232;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
 }
 .front .page-link:focus {
     z-index: 2;
@@ -18111,7 +18123,12 @@ html.black img
     height: 250px;
     object-fit: cover;
 }
-
+.search-block .search-input {
+    width: 60%;
+}
+.search-block .search-select {
+    width: 40%;
+}
 /*#home {
     position: relative;
 }*/

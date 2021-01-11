@@ -86,6 +86,8 @@ return [
 
     'languages_front' => ['uz'=>'o`z','oz'=>'уз','ru' => 'ru','en' =>'en' ],
 
+    'search_query' => ['news','achievement', 'memory'],
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale

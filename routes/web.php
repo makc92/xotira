@@ -36,6 +36,7 @@ Route::group([
     Route::get('/museum/administration/{slug}', 'Front\MuseumController@showTeamMember')->name('museum.teams.show');
     Route::view('/museum/exposition', 'front.pages.museum.exposition')->name('museum.exposition');
     Route::get('/refreshCaptcha', 'Front\RefreshCaptchaController')->name('captcha.refresh');
+    Route::get('/search', 'Front\SearchController@index')->name('search');
 });
 
 Auth::routes([

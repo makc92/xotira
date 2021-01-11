@@ -45,6 +45,10 @@ class NewsService
     {
         return $this->newsRepository->searchByTitle($text);
     }
+    public function searchNewsByTitleOrByContent($text)
+    {
+        return $this->newsRepository->searchByTitleOrByContent($text);
+    }
 
     public function createNews($data)
     {

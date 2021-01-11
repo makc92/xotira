@@ -102,7 +102,7 @@
         <div class="container">
             <div class="row">
                 <!-- start copyright -->
-                <div class="col-md-12 text-center">© 2020 Powered by <a href="https://www.it-park.uz" target="_blank" class="text-dark-gray">ITPark</a></div>
+                <div class="col-md-12 text-center">© 2020 Powered by <a href="https://it-park.uz/" target="_blank" class="text-dark-gray" style="color: #7dba28;font-weight: 700">ITPark</a></div>
                 <!-- end copyright -->
             </div>
         </div>

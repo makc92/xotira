@@ -35,6 +35,10 @@ class AchievementService
     {
         return $this->achievementRepository->searchByTitle($text);
     }
+    public function searchAchievementByTitleOrByContent($text)
+    {
+        return $this->achievementRepository->searchByTitleOrContent($text);
+    }
 
     public function createAchievement($data)
     {
