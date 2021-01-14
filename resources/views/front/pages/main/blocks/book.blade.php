@@ -1,7 +1,7 @@
 <!-- start китоби section -->
 <section class="parallax wow fadeIn" id="memory" data-stellar-background-ratio="0.3"
          style="background-image:url('{{asset('./images/main2.jpg')}}');">
-    <div class="opacity-extra-medium bg-black"></div>
+    <div class="opacity-extra-medium bg-blue"></div>
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">

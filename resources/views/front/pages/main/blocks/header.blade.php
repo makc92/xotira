@@ -1,6 +1,6 @@
 <header class="header-with-topbar fixed-topbar sticky">
     <!-- topbar -->
-    <div class="top-header-area bg-black padding-10px-tb">
+    <div class="top-header-area bg-header-blue padding-10px-tb">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="col-6 d-flex align-items-center">

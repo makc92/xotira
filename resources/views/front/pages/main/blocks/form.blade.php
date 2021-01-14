@@ -1,7 +1,7 @@
 <!-- start form section -->
 <section class="parallax wow fadeIn" data-stellar-background-ratio="0.3"
          style="background-image:url('{{asset('images/main3.jpg')}}');" id="form">
-    <div class="opacity-extra-medium bg-black"></div>
+    <div class="opacity-extra-medium bg-blue"></div>
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8 text-center sm-margin-40px-bottom">

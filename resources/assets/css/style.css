@@ -1020,10 +1020,16 @@ a.text-very-light-gray-hover:hover {
 }
 
 .bg-extra-dark-gray {
-    background-color: #1c1c1c;
+    background-color: #0e1f33;
 }
 .bg-extra-dark-gold {
-    background-color: #3c2e06;
+    background-color: #112f54;
+}
+.bg-blue {
+    background: #112f54;
+}
+.bg-header-blue {
+    background: #3267a8;
 }
 
 .bg-dark-gray {
@@ -9802,7 +9808,7 @@ header.header-appear nav.bootsnav.header-light .navbar-nav>li>a.active,
 header nav.navbar .navbar-nav>li>a.active,
 nav.navbar.bootsnav ul.nav>li>a.active {
     /*color: rgba(0, 0, 0, 0.6)*/
-    color: #b49a4a;
+    color: #3267a8;
 }
 
 header nav.navbar.white-link .navbar-nav>li>a.active,
@@ -17875,7 +17881,7 @@ footer a:active, footer a:hover {
     text-decoration: underline;
 }
 .btn-gold {
-    background: #b49a4a;
+    background: #3267a8;
     color: #fff;
     border-color: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -17883,11 +17889,11 @@ footer a:active, footer a:hover {
 .btn.btn-gold:focus, .btn.btn-gold:hover {
     background: 0 0;
    /* color: #232323;*/
-    color: #b49a4a;
-    border-color: #b49a4a;
+    color: #3267a8;
+    border-color: #3267a8;
 }
 .bg-gold {
-    background-color: #b49a4a;
+    background-color: #3267a8;
 }
 #home h1 {
     border: 2px solid #fff;
@@ -17931,7 +17937,7 @@ h4.heading::after {
     display: block;
     width: 100px;
     height: 3px;
-    background: #b49a4a;
+    background: #3267a8;
     margin: 10px auto;
 }
 h4.heading {
@@ -17941,8 +17947,8 @@ h4.heading {
     justify-content: center;
 }
 .front .page-item.active .page-link {
-    background-color: #b49a4a !important;
-    border-color: #b49a4a !important;
+    background-color: #3267a8 !important;
+    border-color: #3267a8 !important;
     color: #fff !important;
 }
 .front .pagination a.page-link,
@@ -17960,7 +17966,7 @@ h4.heading {
 .front .page-link:focus {
     z-index: 2;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem #b49a4a;
+    box-shadow: 0 0 0 0.2rem #3267a8;
 }
 .front section#museum,
 .front section#regional,
@@ -17985,7 +17991,7 @@ h4.heading {
 .scroll-top-arrow, .scroll-top-arrow:focus {
     width: 50px;
     height: 50px;
-    background: #b49a4a;
+    background: #3267a8;
     font-weight: 700;
     line-height: 50px;
     border-radius: 25%;
@@ -18001,7 +18007,7 @@ h4.heading {
     display: block;
     width: 70%;
     height: 2px;
-    background: #b49a4a;
+    background: #3267a8;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -18011,7 +18017,7 @@ h4.heading {
 .front input,
 textarea,
 select {
-    border: 1px solid #b49a4a;
+    border: 1px solid #3267a8;
     /*font-size: 14px;*/
     font-size: 0.875rem;
     padding: 8px 15px;
@@ -18022,7 +18028,7 @@ select {
     color: inherit;
 }
 .front .custom-file-label {
-    border: 1px solid #b49a4a;
+    border: 1px solid #3267a8;
 }
 .front input::placeholder {
     color: #323232;
