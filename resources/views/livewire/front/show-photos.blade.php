@@ -2,6 +2,7 @@
     <div class="container">
         <div class="row lightbox-gallery">
             <div class="col-12 p-0 sm-padding-15px-lr">
+                <h4 class="text-center">{{__('menu.photo')}}</h4>
                 <ul class="portfolio-grid work-3col hover-option4 gutter-medium">
                     <li class="grid-sizer"></li>
                     <!-- start portfolio item -->

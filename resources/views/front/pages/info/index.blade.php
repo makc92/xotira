@@ -77,7 +77,7 @@
                     </div>
 
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">
+                        <button type="submit" class="btn btn-gold btn-large margin-20px-top">
                             {{__('form.send')}}</button>
                     </div>
                 </div>

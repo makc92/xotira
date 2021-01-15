@@ -9891,7 +9891,7 @@ header {
 }
 
 .sticky.header-with-topbar .top-header-area {
-    top: -45px
+    top: -55px
 }
 
 .sticky.header-with-topbar.fixed-topbar .top-header-area {
@@ -17973,7 +17973,8 @@ h4.heading {
 .front section#info,
 .front section#photo,
 .front section#teams,
-.front section#services
+.front section#services,
+.front section#video
 {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
 }

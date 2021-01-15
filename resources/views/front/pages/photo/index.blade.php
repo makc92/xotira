@@ -4,6 +4,7 @@
 @endsection
 @section('page_styles')
     @livewireStyles
+    <link rel="stylesheet" href="{{asset('/css/mklb.css')}}">
 @endsection
 @section('page_lang')
     @foreach(config('app.languages_front') as $locale => $desc)
@@ -22,16 +23,31 @@
             <div class="row align-items-center">
                 <div class="col-12 d-flex flex-column justify-content-center text-center extra-small-screen page-title-large">
                     <!-- start page title -->
-                    <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">{{__('menu.photo')}}</h1>
+                    <h1 class="text-white-2 alt-font font-weight-600 letter-spacing-minus-1 margin-10px-bottom">{{__('menu.media')}}</h1>
                     <!-- end page title -->
                 </div>
             </div>
         </div>
     </section>
     <livewire:front.show-photos />
+
+    <section class="" id="video">
+        <div class="container">
+            <div class="row lightbox-gallery">
+                <div class="col-12 p-0 sm-padding-15px-lr">
+                    <h4 class="text-center">{{__('menu.video')}}</h4>
+                </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" src="{{asset('/images/videovideo_preview.jpg')}}" data-video-src="{{asset('/video/video1.mp4')}}">
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
 
 @section('page_scripts')
     @livewireScripts
+    <script src="{{asset('/js/mklb.js')}}"></script>
 @endsection
 

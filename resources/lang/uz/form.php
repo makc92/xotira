@@ -5,7 +5,7 @@ return array (
   'phone' => 'Telefon',
   'email' => 'E-mail',
   'message' => 'Ma’lumot',
-  'photo' => 'Fayl biriktirish',
+  'photo' => 'Rasm biriktirish',
   'document' => 'Fayl biriktirish',
   'send' => 'Yuborish',
   'search-text' => 'Matnni kiriting',

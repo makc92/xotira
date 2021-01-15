@@ -54,7 +54,7 @@
                             <tr>
                                 <th scope="row">5</th>
                                 <td>{{__('pricelist.tickets-5')}}</td>
-                                <td>Thornton</td>
+                                <td>16 000</td>
                             </tr>
                             </tbody>
                         </table>

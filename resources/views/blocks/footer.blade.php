@@ -59,10 +59,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 widget border-right border-color-medium-dark-gray md-no-border-right md-margin-30px-bottom sm-text-center">
-                    <div class="widget-title alt-font  text-white-2 text-uppercase margin-10px-bottom font-weight-600">O’zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Qatag’on qurbonlari xotirasi davlat muzeyi</div>
-                    <p class=" width-95 sm-width-100 text-white-2">Режим работы: Вторник-пятница с 9:00 до 17:00
-                        Воскресенье с 10:00 до 15:00 Обед: с 13:00 до 14:00
-                        Выходной день: Понедельник</p>
+                    <div class="widget-title alt-font  text-white-2 text-uppercase margin-10px-bottom font-weight-600">{{__('footer.museum')}}</div>
+                    <p class=" width-95 sm-width-100 text-white-2">{!! __('footer.hours') !!}</p>
                     <!-- start social media -->
                     <div class="social-icon-style-8 d-inline-block vertical-align-middle">
                         <ul class="small-icon no-margin-bottom">
@@ -81,17 +79,16 @@
                         <li><a class="text-white-2" href="{{route('achievements', app()->getLocale())}}">{{__('menu.achievement')}}</a></li>
                         <li><a class="text-white-2" href="{{route('museum.main', app()->getLocale())}}">{{__('menu.museum')}}</a></li>
                         <li><a class="text-white-2" href="{{route('library', app()->getLocale())}}">{{__('menu.library')}}</a></li>
-                        <li><a class="text-white-2" href="{{route('photos', app()->getLocale())}}">{{__('menu.photo')}}</a></li>
+                        <li><a class="text-white-2" href="{{route('photos', app()->getLocale())}}">{{__('menu.media')}}</a></li>
                         <li><a class="text-white-2" href="{{route('info', app()->getLocale())}}">{{__('menu.info')}}</a></li>
                     </ul>
                 </div>
                 <!-- end additional links -->
                 <!-- start contact information -->
                 <div class="col-lg-4 col-md-6 widget padding-45px-left md-padding-15px-left md-clear-both md-no-border-right sm-margin-30px-bottom text-center text-md-left">
-                    <div class="widget-title alt-font text-white-2 text-uppercase margin-10px-bottom font-weight-600">Contact Info</div>
-                    <p class="d-block margin-15px-bottom width-80 sm-width-100 text-white-2">POFO Design Agency<br> 301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
-                    <div class="text-white-2">Email: <a href="mailto:sales@domain.com" class="text-white-2">INFO@XOTIRA-MUZEY.UZ</a></div>
-                    <div class="text-white-2">Phone: (998-71) 2442940</div>
+                    <p class="d-block margin-15px-bottom width-80 sm-width-100 text-white-2">{{__('footer.address')}}</p>
+                    <div class="text-white-2"><i class="fas fa-at"></i>  <a href="mailto:sales@domain.com" class="text-white-2">INFO@XOTIRA-MUZEY.UZ</a></div>
+                    <div class="text-white-2"><i class="fas fa-phone"></i>  (998-71) 2442940 / (998-71) 2447331 </div>
                     <a href="https://goo.gl/maps/59Gnumcip8QmHALW9" class="text-uppercase text-decoration-underline text-white-2" target="_blank">Посмотреть на карте</a>
                 </div>
                 <!-- end contact information -->
