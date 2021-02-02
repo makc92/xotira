@@ -81,6 +81,7 @@
                         <li><a class="text-white-2" href="{{route('library', app()->getLocale())}}">{{__('menu.library')}}</a></li>
                         <li><a class="text-white-2" href="{{route('photos', app()->getLocale())}}">{{__('menu.media')}}</a></li>
                         <li><a class="text-white-2" href="{{route('info', app()->getLocale())}}">{{__('menu.info')}}</a></li>
+                        <li><a class="text-white-2" href="{{route('contacts', app()->getLocale())}}">{{__('menu.contacts')}}</a></li>
                     </ul>
                 </div>
                 <!-- end additional links -->
@@ -99,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <!-- start copyright -->
-                <div class="col-md-12 text-center">© 2020 Powered by <a href="https://it-park.uz/" target="_blank" class="text-dark-gray" style="color: #7dba28;font-weight: 700">ITPark</a></div>
+                <div class="col-md-12 text-center">© 2020 Powered by <a href="https://it-park.uz/" target="_blank" class="text-dark-gray" style="color: #7dba28;font-weight: 700">ITPark</a>            <!-- Made By makc92.dev --></div>
                 <!-- end copyright -->
             </div>
         </div>

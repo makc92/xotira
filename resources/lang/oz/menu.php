@@ -22,4 +22,8 @@ return array (
   'services' => 'Хизматлар',
   'library' => 'Электрон кутубхона',
   'main' => 'Асосий',
+  'contacts' => 'Боғланиш',
+  'useful' => 'Фойдали ҳаволалар',
+  'press-service' => 'Матбуот хизмати',
+  'announcements' => 'Эълонлар',
 );

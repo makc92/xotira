@@ -8,6 +8,8 @@ use Faker\Generator as Faker;
 $factory->define(\App\Models\Team::class, function (Faker $faker) {
     return [
        'thumbnail' => '',
-        'order' => 0
+        'order' => 0,
+        'phone' => $faker->phoneNumber,
+        'email' => $faker->email
     ];
 });

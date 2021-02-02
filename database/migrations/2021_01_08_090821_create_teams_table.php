@@ -17,6 +17,8 @@ class CreateTeamsTable extends Migration
             $table->id();
             $table->string('thumbnail');
             $table->integer('order');
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
 

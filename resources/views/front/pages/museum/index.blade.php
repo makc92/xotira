@@ -4,6 +4,53 @@
 @endsection
 @section('page_styles')
     <link rel="stylesheet" href="{{asset('/css/jqvmap.css')}}">
+    <style>
+        .map-uzbekistan path {
+            fill: #e5e5e5;
+            stroke: #fff;
+            stroke-width: 1px;
+            cursor: pointer;
+        }
+        .map-uzbekistan path.active {
+            fill: #3267a8;
+        }
+        .map-uzbekistan path:hover {
+            fill: rgba(159,186,220,.51);
+        }
+
+        .territorial-administrations-info-box {
+            display: none;
+        }
+        .territorial-administrations-info-box p {
+            margin-bottom: 20px;
+        }
+
+        .territorial-administrations-info-box.active {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .regiona-info {
+            border-top-width: 1px!important;
+            border-right-width: 1px!important;
+            border-bottom-width: 1px!important;
+            border-left-width: 1px!important;
+            background-color: #3267a8!important;
+            border-left-color: #3267a8!important;
+            border-right-color: #3267a8!important;
+            border-top-color: #3267a8!important;
+            border-bottom-color: #3267a8!important;
+            border-radius: 4px!important;
+            color: #fff;
+            width: 80%;
+            margin: auto;
+        }
+        .territorial-administrations-info-box-title {
+            padding-left: 15px;
+            border-left: 5px solid #fff;
+            font-size: 1.3rem;
+        }
+    </style>
 @endsection
 @section('page_lang')
     @foreach(config('app.languages_front') as $locale => $desc)
@@ -36,7 +83,7 @@
 @endsection
 
 @section('page_scripts')
-    <script src="{{asset('/js/jquery.vmap.js')}}"></script>
+    {{--<script src="{{asset('/js/jquery.vmap.js')}}"></script>
     <script src="{{asset('/js/vmap.uzbekistan.js')}}"></script>
     <script>
 
@@ -106,6 +153,71 @@
 
 
 
+    </script>--}}
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.TT').on('click', function () {
+                    $('.TT').addClass('active').attr("popover");
+                    $('.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG').removeClass('active')
+                });
+                $('.TV').on('click', function () {
+                    $('.TV').addClass('active');
+                    $('.TT,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.NS').on('click', function () {
+                    $('.NS').addClass('active');
+                    $('.TT,.TV,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.NM').on('click', function () {
+                    $('.NM').addClass('active');
+                    $('.TT,.TV,.NS,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.AN').on('click', function () {
+                    $('.AN').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.BH').on('click', function () {
+                    $('.BH').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.FG,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.FG').on('click', function () {
+                    $('.FG').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.JZ,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.JZ').on('click', function () {
+                    $('.JZ').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.NA,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.NA').on('click', function () {
+                    $('.NA').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.KD,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.KD').on('click', function () {
+                    $('.KD').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.SD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.SD').on('click', function () {
+                    $('.SD').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SI,.UG,.SA').removeClass('active')
+                });
+                $('.SI').on('click', function () {
+                    $('.SI').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.UG,.SA').removeClass('active')
+                });
+                $('.UG').on('click', function () {
+                    $('.UG').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.SA').removeClass('active')
+                });
+                $('.SA').on('click', function () {
+                    $('.SA').addClass('active');
+                    $('.TT,.TV,.NS,.NM,.AN,.BH,.FG,.JZ,.NA,.KD,.SD,.SI,.UG').removeClass('active')
+                });
+                $(function () {
+                    $('[data-toggle="popover"]').popover()
+                })
+            })
+        })(jQuery)
     </script>
 @endsection
 

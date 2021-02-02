@@ -252,6 +252,11 @@ return [
             'icon' => 'fas fa-newspaper',
         ],
         [
+            'text' => 'Объявления',
+            'url'  => 'admin/adverts',
+            'icon' => 'fas fa-newspaper',
+        ],
+        [
             'text' => 'Библиотека',
             'url'  => 'admin/books',
             'icon' => 'fas fa-book-open',

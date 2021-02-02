@@ -4779,6 +4779,7 @@
 
     .skillbar-bar-style1 .skill-bar-percent {right: -30px;}
     .skillbar-bar-style2 .skill-bar-percent {right: -30px;}
+    .front .ticket p.price-info {min-height: 100px;}
 }
 
 /* ipad Portrait */

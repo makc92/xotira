@@ -27,6 +27,7 @@
             </div>
         </div>
     </section>
+    @include('front.pages.memory.blocks.regions')
     <livewire:front.show-veterans-by-region :region="$region" />
 @endsection
 

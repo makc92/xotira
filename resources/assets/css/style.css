@@ -9598,7 +9598,8 @@ header a.logo {
 }
 
 header a.logo img {
-    max-height: 26px;
+    max-height: 50px;
+    /*width: 200px;*/
 }
 
 header .left-nav .sidebar-part1 a.logo img {
@@ -10296,7 +10297,7 @@ nav.navbar.bootsnav.menu-center ul.nav.navbar-center {
 .simple-dropdown .dropdown-menu {
     position: absolute;
     left: 0;
-    background: rgba(35, 35, 35, 1);
+    background: #3267a8;
     min-width: 220px;
     padding: 13px 0 15px;
     box-shadow: none;
@@ -10309,7 +10310,7 @@ nav.navbar.bootsnav .simple-dropdown .dropdown-menu>li {
 
 .simple-dropdown .dropdown-menu>li>a {
     font-size: 12px;
-    color: #9d9d9d;
+    color: #fff;
 }
 
 .simple-dropdown .dropdown-menu>li a {
@@ -17896,10 +17897,10 @@ footer a:active, footer a:hover {
     background-color: #3267a8;
 }
 #home h1 {
-    border: 2px solid #fff;
+    /*border: 2px solid #fff;
     padding: 10px 20px;
     box-shadow: 0px 0px 5px 2px #FFFFFF;
-    border-radius: 6px;
+    border-radius: 6px;*/
 }
 .main-page section#achievement img,
 .main-page section#museum img,
@@ -17919,6 +17920,9 @@ img.image-shadow {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left,  #f7f7f7;
 }
 .main-page section#virtual  {
+    background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left #f7f7f7;
+}
+.main-page section#partners {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left #f7f7f7;
 }
 
@@ -17974,7 +17978,8 @@ h4.heading {
 .front section#photo,
 .front section#teams,
 .front section#services,
-.front section#video
+.front section#video,
+.front section#exposition
 {
     background: url("../images/top-50.svg") no-repeat top left, url("../images/bottom-50.svg") no-repeat bottom left;
 }
@@ -18135,6 +18140,27 @@ html.black img
 }
 .search-block .search-select {
     width: 40%;
+}
+.front .contacts .bg-gold i {
+    color: #fff;
+    font-size: 24px;
+}
+.front .ticket {
+    position: relative;
+}
+.front .ticket .price {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: #ffff;
+    text-align: center;
+    right: 0;
+    padding: 0 10px;
+}
+.front .ticket p.price-info {
+    min-height: 130px;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
 }
 /*#home {
     position: relative;

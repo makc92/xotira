@@ -29,7 +29,7 @@ class Photo extends Model
 
 
     protected $uploadableImages = [
-        'thumbnail' => ['thumb'=> 300, 'medium'=> 750 ]
+        'thumbnail' => ['thumb'=> 300, 'medium'=> 750,'normal' => 1200 ]
     ];
     protected $imageResizeTypes = [
         'normal' => false,

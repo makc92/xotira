@@ -24,6 +24,7 @@ class VeteransController extends Controller
 
     public function indexByRegion($locale, $region)
     {
-        return view('front.pages.memory.indexByRegion', compact('region'));
+        $regionList = Region::pluck('title', 'id')->toArray();
+        return view('front.pages.memory.indexByRegion', compact(['regionList','region']));
     }
 }

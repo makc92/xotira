@@ -146,6 +146,14 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        {{Form::label('phone', 'Телефон')}}
+                        {{Form::text('phone', null, $attributes = ['class' => 'form-control'])}}
+                    </div>
+                    <div class="form-group">
+                        {{Form::label('email', 'Email')}}
+                        {{Form::text('email', null, $attributes = ['class' => 'form-control'])}}
+                    </div>
+                    <div class="form-group">
                         {{Form::label('order', 'Очередь (*)')}}
                         {{Form::number('order', null, $attributes = ['class' => 'form-control'])}}
                     </div>

@@ -22,4 +22,8 @@ return array (
   'services' => 'Services',
   'library' => 'E-library',
   'main' => 'Main',
+  'contacts' => 'Contacts',
+  'useful' => 'Useful resources',
+  'press-service' => 'Press service',
+  'announcements' => 'Announcements',
 );

@@ -51,6 +51,8 @@ class CreateTeamHandler
             ],
             'thumbnail' => $data['thumbnail'],
             'order' => $data['order'],
+            'phone' => $data['phone'],
+            'email' => $data['email'],
         ];
 
         return $this->teamRepository->createFromArray($data);

@@ -51,6 +51,8 @@ class UpdateTeamHandler
             ],
             'thumbnail' => isset($data['thumbnail']) ? $data['thumbnail'] : '',
             'order' => $data['order'],
+            'phone' => isset($data['phone']) ? $data['phone'] : '',
+            'email' => isset($data['email']) ? $data['email'] : '',
         ];
 
         return $this->teamRepository->updateFromArray($team, $data);

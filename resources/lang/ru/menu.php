@@ -22,4 +22,8 @@ return array (
   'services' => 'Услуги',
   'library' => 'Электронная библиотека',
   'main' => 'Главная',
+  'contacts' => 'Контакты',
+  'useful' => 'Полезные ссылки',
+  'press-service' => 'Пресс-служба',
+  'announcements' => 'Объявления',
 );

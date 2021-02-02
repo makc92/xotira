@@ -6,6 +6,7 @@
         <div class="slider-typography text-center">
             <div class="slider-text-middle-main sm-padding-15px-lr">
                 <div class="slider-text-middle text-center">
+                    <img src="{{asset('/images/logo_svg.svg')}}" alt="" class="main-logo mb-2" width="20%">
                     <h1 class="text-white">{{__('main.head-title')}}</h1>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-<section class="wow fadeIn" id="services">
+<section id="services">
     <div class="container tab-style2">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7 text-center margin-100px-bottom sm-margin-40px-bottom">
@@ -22,7 +22,7 @@
             <div class="tab-pane med-text fade in active show" id="tab_sec1">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <table class="table table-hover">
+                        {{--<table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -57,7 +57,55 @@
                                 <td>16 000</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table>--}}
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.tickets-1')}}</p>
+                                        <p>2 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.tickets-2')}}</p>
+                                        <p>3 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.tickets-3')}}</p>
+                                        <p>5 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.tickets-4')}}</p>
+                                        <p>12 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.tickets-5')}}</p>
+                                        <p>20 000</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,7 +114,7 @@
             <div class="tab-pane fade in" id="tab_sec2">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <table class="table table-hover">
+                       {{-- <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -96,7 +144,45 @@
                                 <td>20000</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table>--}}
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.guide-1')}}</p>
+                                        <p>5 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.guide-2')}}</p>
+                                        <p>7 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.guide-3')}}</p>
+                                        <p>8 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.guide-4')}}</p>
+                                        <p>20 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,7 +191,7 @@
             <div class="tab-pane fade in" id="tab_sec3">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <table class="table table-hover">
+                        {{--<table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -130,7 +216,36 @@
                                 <td>20000</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table>--}}
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.photo-1')}}</p>
+                                        <p>40 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.photo-2')}}</p>
+                                        <p>30 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.photo-3')}}</p>
+                                        <p>20 000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,7 +254,7 @@
             <div class="tab-pane fade in" id="tab_sec4">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <table class="table table-hover">
+                        {{--<table class="table table-hover">
                             <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -172,7 +287,57 @@
                                 <td>{{__('pricelist.free-6')}}</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table>--}}
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-1')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-2')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-3')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-4')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-5')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6">
+                                <div class="ticket">
+                                    <img src="{{asset('images/ticket.png')}}" alt="">
+                                    <div class="price">
+                                        <p class="price-info">{{__('pricelist.free-6')}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

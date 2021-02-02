@@ -148,6 +148,14 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        {{Form::label('phone', 'Телефон')}}
+                        {{Form::text('phone', $team->phone, $attributes = ['class' => 'form-control'])}}
+                    </div>
+                    <div class="form-group">
+                        {{Form::label('email', 'Email')}}
+                        {{Form::text('email', $team->email, $attributes = ['class' => 'form-control'])}}
+                    </div>
+                    <div class="form-group">
                         {{Form::label('order', 'Очередь (*)')}}
                         {{Form::number('order', $team->order, $attributes = ['class' => 'form-control'])}}
                     </div>

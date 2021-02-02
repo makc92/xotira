@@ -53,6 +53,7 @@
 
 @include('front.pages.main.blocks.form')
 @include('front.pages.main.blocks.3d')
+@include('front.pages.main.blocks.partners')
 @include('blocks.footer')
 <!-- start scroll to top -->
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fas fa-arrow-up"></i></a>

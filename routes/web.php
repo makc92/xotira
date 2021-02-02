@@ -22,6 +22,8 @@ Route::group([
     'where' => ['locale' => '[a-zA-Z]{2}'],
     'middleware' => 'localization'], function() {
     Route::get('/', 'Front\MainPageController@index')->name('main');
+    Route::get('/anouncments', 'Front\AdvertsController@index')->name('anouncments');
+    Route::get('/anouncments/{slug}', 'Front\AdvertsController@show')->name('anouncments.show');
     Route::get('/news', 'Front\NewsController@index')->name('news');
     Route::get('/news/{slug}', 'Front\NewsController@show')->name('news.show');
     Route::get('/memory', 'Front\VeteransController@index')->name('memory');
@@ -37,6 +39,7 @@ Route::group([
     Route::view('/museum/exposition', 'front.pages.museum.exposition')->name('museum.exposition');
     Route::get('/refreshCaptcha', 'Front\RefreshCaptchaController')->name('captcha.refresh');
     Route::get('/search', 'Front\SearchController@index')->name('search');
+    Route::view('/contacts', 'front.pages.contacts.index')->name('contacts');
 });
 
 Auth::routes([
@@ -63,6 +66,7 @@ Route::group(
         Route::resource('applications', 'ApplicationsController');
         Route::resource('photos', 'PhotosController');
         Route::resource('teams', 'TeamsController');
+        Route::resource('adverts', 'AdvertsController');
         Route::get('clear', 'ClearController');
     }
 );

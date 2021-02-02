@@ -24,8 +24,8 @@
                 <td >{{$team->name}}</td>
                 <td >{{$team->position}}</td>
                 <td class="text-center d-flex justify-content-center">
-                    <a href="{{route('admin.teams.show', $team->id)}}" class="btn btn-primary"><i
-                            class="fas fa-pencil-alt"></i> Show</a>
+                    {{--<a href="{{route('admin.teams.show', $team->id)}}" class="btn btn-primary"><i
+                            class="fas fa-pencil-alt"></i> Show</a>--}}
                     <a href="{{route('admin.teams.edit', $team->id)}}" class="btn btn-info"><i
                             class="fas fa-pencil-alt"></i> Edit</a>
                     <form method="POST" action="{{ route('admin.teams.destroy', $team->id) }}" class="mr-1">

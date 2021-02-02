@@ -41,7 +41,7 @@ class Team extends Model
 {
     use Translatable, Uploadable;
 
-    protected $fillable = ['order'];
+    protected $fillable = ['order','phone', 'email'];
 
     public $translatedAttributes =  ['name','slug', 'bio', 'days', 'activity', 'position'];
 

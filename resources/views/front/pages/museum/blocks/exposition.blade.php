@@ -1,5 +1,5 @@
 <!-- start Музей section -->
-<section class="bg-light-gray" id="museum">
+<section class="bg-light-gray" id="exposition">
     <div class="container">
         <div class="row align-items-center justify-content-center mb-5">
             <div class="col-12">

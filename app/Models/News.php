@@ -47,7 +47,7 @@ class News extends Model
     public $translatedAttributes = ['title', 'slug', 'content'];
 
     protected $uploadableImages = [
-        'thumbnail' => ['thumb'=> 300, 'medium'=> 700]
+        'thumbnail' => ['thumb'=> 300, 'medium'=> 700,'normal' => 1200]
     ];
 
     public function user()

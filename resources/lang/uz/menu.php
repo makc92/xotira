@@ -22,4 +22,8 @@ return array (
   'services' => 'Xizmatlar',
   'library' => 'Elektron kutubxona',
   'main' => 'Asosiy',
+  'contacts' => 'Bog’lanish',
+  'useful' => 'Foydali havolalar',
+  'press-service' => 'Matbuot xizmati',
+  'announcements' => 'E’lonlar',
 );
