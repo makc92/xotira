@@ -35,7 +35,7 @@ class Book extends Model
     protected $fillable = ['title','description'];
 
     protected $uploadableImages = [
-        'thumbnail'
+        'thumbnail' => ['thumb'=> 300, 'medium'=> 700, 'normal' => 1200]
     ];
 
     protected $uploadableFiles = [
