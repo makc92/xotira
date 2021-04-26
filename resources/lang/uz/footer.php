@@ -7,4 +7,5 @@ Tushlik: 13:00 dan 14:00 gacha<br>
 Dushanba dam olish kuni',
   'address' => '100184, Toshkent shahri, Yunusobod tumani, 
 A.Temur ko’chasi, “Shahidlar xotirasi” maydoni',
+  'map' => 'Karta',
 );

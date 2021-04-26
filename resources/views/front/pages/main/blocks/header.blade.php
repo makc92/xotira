@@ -65,7 +65,6 @@
                 </button>
                 <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
                     <ul class="nav navbar-nav alt-font font-weight-700 w-100 justify-content-between">
-                        {{--<li><a href="#news" title="{{__('menu.press-service	')}}" class="inner-link">{{__('menu.press-service')}}</a></li>--}}
                         <li class="dropdown simple-dropdown">
                             <a href="javascript:void(0);">{{__('menu.press-service')}}</a>
                             <i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
@@ -78,7 +77,6 @@
                         </li>
                         <li><a href="#memory" title="{{__('menu.memory')}}" class="inner-link">{{__('menu.memory')}}</a></li>
                         <li><a href="#achievement" title="{{__('menu.achievement')}}" class="inner-link">{{__('menu.achievement')}}</a></li>
-                        {{--<li><a href="#museum" title="{{__('menu.museum')}}" class="inner-link">{{__('menu.museum')}}</a></li>--}}
                         <li class="dropdown simple-dropdown">
                             <a href="javascript:void(0);">{{__('menu.museum')}}</a>
                             <i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
@@ -98,9 +96,16 @@
                             </ul>
                         </li>
                         <li><a href="#lib" title="{{__('menu.library')}}" class="inner-link">{{__('menu.library')}}</a></li>
-                        <li><a href="#photo" title="{{__('menu.media')}}" class="inner-link">{{__('menu.media')}}</a></li>
-                        {{--<li><a href="#form" title="{{__('menu.info')}}" class="inner-link">{{__('menu.info')}}</a></li>--}}
-                        <!--  <li><a href="#contact" title="Contact" class="inner-link">Contact</a></li> -->
+                        <li class="dropdown simple-dropdown">
+                            <a href="javascript:void(0);">{{__('menu.media')}}</a>
+                            <i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                            <ul class="dropdown-menu" role="menu" style="top: 72px; display: none; opacity: 1;">
+                                <li class="dropdown">
+                                    <a class="inner-link" href="{{route('photos', app()->getLocale())}}#photo">{{__('menu.photo')}}</a>
+                                    <a class="inner-link" href="{{route('photos', app()->getLocale())}}#video">{{__('menu.video')}}</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

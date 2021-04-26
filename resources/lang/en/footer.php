@@ -9,4 +9,5 @@ Closed: Monday',
   'address' => 'Tashkent city 100184
 Yunusobod district, Amir Temur street,
 “Shahidlar khotirasi” square',
+  'map' => 'Map',
 );

@@ -8,7 +8,7 @@ return array (
   '3d' => '3D virtual sayohat',
   'media' => 'Mediateka',
   'photo' => 'Fotogalereya',
-  'video' => 'Vidiogalereya',
+  'video' => 'Videogalereya',
   'museum' => 'Muzey',
   'about_museum' => 'Muzey haqida',
   'administration' => 'Rahbariyat',
