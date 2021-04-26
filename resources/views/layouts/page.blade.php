@@ -12,14 +12,23 @@
     <meta name="description" content="{{__('main.head-title')}}">
     <!-- keywords -->
     <meta name="keywords" content="{{__('main.head-title')}}">
-    <!-- favicon -->
-{{-- <link rel="shortcut icon" href="images/favicon.png">
- <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
- <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
- <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">--}}
-<!-- animation -->
     <link rel="stylesheet" href="{{asset('./css/libs.css')}}"/>
     <link rel="stylesheet" href="{{asset('./css/main.css')}}"/>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(76570066, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/76570066" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
     @yield('page_styles')
     {{--<script src="js/html5shiv.js"></script>--}}
     <!--[if IE]>
