@@ -46,6 +46,9 @@
                 <div class="col-lg-4">
                     <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video3_preview.jpg')}}" data-video-src="{{asset('/video/video3.mp4')}}">
                 </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video4_preview.jpg')}}" data-video-src="{{asset('/video/video4.mp4')}}">
+                </div>
             </div>
         </div>
     </section>
