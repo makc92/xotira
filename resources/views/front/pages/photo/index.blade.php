@@ -38,7 +38,13 @@
                     <h4 class="text-center">{{__('menu.video')}}</h4>
                 </div>
                 <div class="col-lg-4">
-                    <img class="mklbItem demo" src="{{asset('/images/videovideo_preview.jpg')}}" data-video-src="{{asset('/video/video1.mp4')}}">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/videovideo_preview.jpg')}}" data-video-src="{{asset('/video/video1.mp4')}}">
+                </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video2_preview.png')}}" data-video-src="{{asset('/video/video2.mp4')}}">
+                </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video3_preview.jpg')}}" data-video-src="{{asset('/video/video3.mp4')}}">
                 </div>
             </div>
         </div>
