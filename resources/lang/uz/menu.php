@@ -25,5 +25,5 @@ return array (
   'contacts' => 'Bog’lanish',
   'useful' => 'Foydali havolalar',
   'press-service' => 'Matbuot xizmati',
-  'announcements' => 'Очиқ маълумотлар',
+  'announcements' => 'Ochiq ma’lumotlar',
 );
