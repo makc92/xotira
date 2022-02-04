@@ -49,6 +49,12 @@
                 <div class="col-lg-4">
                     <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video4_preview.jpg')}}" data-video-src="{{asset('/video/video4.mp4')}}">
                 </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video5_preview.jpg')}}" data-video-src="{{asset('/video/video5.mp4')}}">
+                </div>
+                <div class="col-lg-4">
+                    <img class="mklbItem demo" style="height: 100%;" src="{{asset('/images/video6_preview.jpg')}}" data-video-src="{{asset('/video/video6.mp4')}}">
+                </div>
             </div>
         </div>
     </section>

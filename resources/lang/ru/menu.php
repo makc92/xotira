@@ -25,5 +25,5 @@ return array (
   'contacts' => 'Контакты',
   'useful' => 'Полезные ссылки',
   'press-service' => 'Пресс-служба',
-  'announcements' => 'Объявления',
+  'announcements' => 'Открытая информация',
 );

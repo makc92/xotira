@@ -25,5 +25,5 @@ return array (
   'contacts' => 'Contacts',
   'useful' => 'Useful resources',
   'press-service' => 'Press service',
-  'announcements' => 'Announcements',
+  'announcements' => 'Open information',
 );
